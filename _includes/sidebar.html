@@ -1,5 +1,12 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+
+  <picture>
+    <source media="(max-width: 799px)" srcset="/assets/img/andy-square.jpg">
+    <source media="(min-width: 800px)" srcset="/assets/img/andy-tall.jpg">
+    <img src="/assets/img/andy-square.jpg" alt="Andy Fry eating a cupcake and looking at the Empire State Building" />
+  </picture>
+    
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
@@ -25,10 +32,6 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
