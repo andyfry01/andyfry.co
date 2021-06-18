@@ -1,5 +1,5 @@
 <article id="comment{% unless include.r %}{{ id | prepend: '-' }}{% else %}{{ include.id | prepend: '-' }}{% endunless %}" class="js-comment comment {% unless include.parent == include.id %}child{% endunless %}">
-  <div class="comment__avatar">
+  <!-- <div class="comment__avatar">
     {% if include.avatar %}
       <noscript><img src="{{ include.avatar }}" alt=""></noscript>
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ include.avatar }}" alt="" class="lazyload blur-up">
@@ -10,7 +10,7 @@
       <noscript><img src="/assets/images/avatar-60.png" alt=""></noscript>
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, /assets/images/avatar-120.png 2x" alt="" class="lazyload blur-up">
     {% endif %}
-  </div>
+  </div> -->
   <div class="comment__main">
     <div class="comment__meta">
       {% unless include.url == blank or include.url == "" %}
@@ -31,7 +31,7 @@
     {% unless include.is_last == false or page.comments_locked == true %}
       <div class="comment__reply">
         <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')">
-          &#x2BA9; Reply</a>
+          ✉️ Reply</a>
       </div>
     {% endunless %}
   </div>
