@@ -4,10 +4,29 @@ kramdown:
 highlighter:      pygments
 
 
+twitter_username: "startupinamonth"
+
+# Social Sharing
+twitter:
+  username: "startupinamonth"
+facebook: 
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : https://startupinamonth.net/assets/images/profile-pic.png
+
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: 
+    - https://twitter.com/startupinamonth
+    - https://www.twitch.tv/a_fry_
+    - https://www.youtube.com/channel/UCkDn7Pnyeq3SJha1x3GXTkQ
 
 author:
   name:           'Andy Fry'
-  url:            https://twitter.com/mdo
+  bio              : ""
+  location         : "New York, USA"
 
 paginate:         5
 permalink: /:categories/:title/
