@@ -1,0 +1,32 @@
+{
+  "name": "20.22__andyfry.co",
+  "version": "1.0.0",
+  "description": "Thank you visitor!",
+  "main": "index.js",
+  "scripts": {
+    "csser": "npx tailwindcss -c ./tailwind.config.js -i ./tailwind.config.css -o ./public/css/style.css --no-autoprefixer -w",
+    "dev": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyfry01/andyfry.co.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyfry01/andyfry.co/issues"
+  },
+  "homepage": "https://github.com/andyfry01/andyfry.co#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "cssnano": "^5.0.7"
+  }
+}

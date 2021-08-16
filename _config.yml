@@ -4,22 +4,21 @@ kramdown:
 highlighter:      pygments
 
 
-twitter_username: "startupinamonth"
+twitter_username: "andyyfry"
 
 # Social Sharing
 twitter:
-  username: "startupinamonth"
+  username: "andyyfry"
 facebook: 
   username               :
   app_id                 :
   publisher              :
-og_image                 : https://startupinamonth.net/assets/images/profile-pic.png
-
+og_image                 : https://andyfry.co/assets/img/andy-square.jpg
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: 
-    - https://twitter.com/startupinamonth
+    - https://twitter.com/andyyfry
     - https://www.twitch.tv/a_fry_
     - https://www.youtube.com/channel/UCkDn7Pnyeq3SJha1x3GXTkQ
 
@@ -28,7 +27,7 @@ author:
   bio              : ""
   location         : "New York, USA"
 
-paginate:         5
+paginate:         100
 permalink: /:categories/:title/
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -63,19 +62,19 @@ defaults:
 # Site Author
 author:
   name             : "Andy Fry"
-  avatar           : /assets/images/profile-pic.png
+  avatar           : /assets/img/andy-square.jpg
   bio              : "I'm building 12 startups in 12 months using Clojure and ClojureScript. I've never founded a startup, and I've never used Clojure! Should be fun right?"
   location         : "New York, USA"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:andy@startupinamonth.net"
+      url: "mailto:andyfry01@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://startupinamonth.net"
+      url: "https://andyfry.co"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/startupinamonth"
+      url: "https://twitter.com/andyyfry"
     - label: "Twitch"
       icon: "fab fa-fw fa-twitch"
       url: "https://www.twitch.tv/a_fry_"
@@ -105,7 +104,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : #"disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:

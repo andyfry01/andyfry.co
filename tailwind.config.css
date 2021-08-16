@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/assets/fonts/Caveat-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'SourceSans';
+  src: url('assets/fonts/SourceSans3VF-Roman.ttf');
+}
+
+
+/* Overrides for tailwind prose classes */
+@layer utilities {
+  .prose .post a {
+    @apply text-pink-600;
+    @apply font-bold;
+    @apply text-xl;
+  }
+
+  .site-header a.header-link {
+    @apply text-pink-400;
+    @apply font-bold;
+    @apply text-2xl;
+    @apply underline;
+  }
+
+  .site-header h1.site-title {
+    font-family: 'Caveat' !important;
+    @apply font-bold;
+    @apply text-white;
+    @apply text-5xl !important;
+    @apply mb-8;
+    @apply underline;
+  }
+
+
+  .prose .post em {
+    font-family: 'Caveat';
+    @apply text-pink-600;
+    @apply font-extrabold;
+    @apply text-2xl;
+    @apply mr-1;
+  }
+
+  .prose .post h1, 
+  .prose .post h2, 
+  .prose .post h3, 
+  .prose .post h4, 
+  .prose .post h5, 
+  .prose .post h6 {
+    font-family:'SourceSans';
+    @apply font-bold;
+    @apply text-indigo-600;
+    @apply font-mono; 
+    @apply mb-8;
+    @apply underline;
+  }
+
+
+  .prose .post em {
+    font-family: 'Caveat';
+    @apply text-pink-600;
+    @apply font-extrabold;
+    @apply text-2xl;
+    @apply mr-1;
+  }
+
+  .prose .post pre {
+    @apply mb-6;
+  }
+
+  .prose .post p code, 
+  .prose .post li code {
+    @apply text-indigo-600;
+  }
+
+  .prose .post strong {
+    @apply text-indigo-600;
+  }
+
+  
+}
