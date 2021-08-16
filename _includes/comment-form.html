@@ -15,16 +15,6 @@
           <input type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
         </label>
       </div>
-      <!-- <div class="notice" style="margin-bottom: 1em">
-          Your email address is used to display your <a href="https://en.gravatar.com">Gravatar</a>, if applicable,
-          and subscribe you to replies using the <a href="https://www.mailgun.com">Mailgun</a> web service,
-          which you are free to unsubscribe from when you get any emails.
-          Your email address will not be displayed publicly or shared with anyone else.
-      </div>
-      <div class="notice" style="margin-bottom: 1em">
-          <strong>Comments are moderated.</strong> Your comment will be reviewed by a human before being posted to
-          this page. Any comment made for the purpose of advertising will not be approved.
-      </div> -->
       <div class="form__group">
         <label for="comment-form-message">Comment
           <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message"></textarea>
@@ -37,7 +27,7 @@
       <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
       <input type="hidden" name="options[subscribe]" value="email">
       <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-      <button type="submit" id="comment-form-submit">Submit comment</button>
+      <button class="text-indigo-600 bg-transparent border border-solid border-indigo-600 hover:bg-indigo-600 hover:text-white active:bg-pink-600 font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit" id="comment-form-submit">Submit comment</button>
     </form>
     <div class="hidden js-notice notice">
       <p class="js-notice-text"></p>
