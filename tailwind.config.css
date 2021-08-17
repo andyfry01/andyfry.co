@@ -18,8 +18,6 @@
 @layer utilities {
   .prose .post a {
     @apply text-pink-600;
-    @apply font-bold;
-    @apply text-xl;
   }
 
   .site-header a.header-link {

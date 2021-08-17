@@ -1429,9 +1429,6 @@ video {
 .prose .post a {
   --tw-text-opacity: 1;
   color: rgba(219, 39, 119, var(--tw-text-opacity));
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .site-header a.header-link {
