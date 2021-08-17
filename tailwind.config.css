@@ -3,17 +3,6 @@
 @tailwind utilities;
 
 
-@font-face {
-  font-family: 'Caveat', cursive;
-  src: url('/assets/fonts/Caveat-SemiBold.ttf');
-}
-
-@font-face {
-  font-family: 'SourceSans';
-  src: url('assets/fonts/SourceSans3VF-Roman.ttf');
-}
-
-
 /* Overrides for tailwind prose classes */
 @layer utilities {
   .prose .post a {
