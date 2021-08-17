@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "csser": "npx tailwindcss -c ./tailwind.config.js -i ./tailwind.config.css -o ./public/css/style.css --no-autoprefixer -w",
-    "dev": "bundle exec jekyll serve"
+    "dev": "bundle exec jekyll serve",
+    "dev:draft": "bundle exec jekyll serve --draft"
   },
   "repository": {
     "type": "git",
