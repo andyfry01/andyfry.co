@@ -7,6 +7,7 @@ read_time: true
 comments: true
 share: true
 related: true
+description: "If your web app is a chonker of a page that takes a long time to download, then you're cutting off easy access to those without fast internet."
 ---
 
 ## Your tech stack
