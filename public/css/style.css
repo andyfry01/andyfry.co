@@ -1519,9 +1519,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Caveat';
+  font-family: 'Caveat', cursive;
 
-  src: url('/assets/fonts/Caveat-VariableFont_wght.ttf');
+  src: url('/assets/fonts/Caveat-SemiBold.ttf');
 }
 
 @font-face {
