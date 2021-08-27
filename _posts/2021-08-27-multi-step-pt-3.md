@@ -14,7 +14,13 @@ related: true
 
 ## Accessibility
 
-The [Animations](#Animations) section addresses the instantaneous SPA page-loading problem from a *visual* perspective. However, millions of web users are *visually impaired*, or otherwise need or want to use a [screen reader](https://en.wikipedia.org/wiki/Screen_reader) or other [assistive tools](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse the web.
+Millions of web users are *visually impaired*, or otherwise need or want to use a [screen reader](https://en.wikipedia.org/wiki/Screen_reader) or other [assistive tools](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse the web. One of the web's many great achievements is that when a website is built with proper HTML, it's fully accessible! All of the standardized semantic tags we have at our disposal – [headings](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements), [paragraphs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p), [anchors](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a), [sections](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section), etc. – form a wonderful, standardized interface which enables assistive software to parse documents easily. This, in turn, makes it much easier for users of assistive devices to navigate pages when the usual visual experience is out of reach. 
+
+However, React-driven multistep forms can often impair the accessibility of a page. Because these forms are primarily JavaScript-driven instead of HTML-driven, many of the "signals" that assistive technology relies on to detect changes and updates to a page go missing. 
+
+At best, these accessibility problems can be a small annoyance; at worst, they can completely block visitors from using your website at all, which is not only a grievous and unneccessary disenfranchisement of a whole class of internet users, it's bad for business too!
+
+Fortunately, it's not too hard to add those signals back in. So let's dive in and learn what kind of problems can be introduced by React multistep forms and ways to minimize them. 
 
 ### Missing signals
 
@@ -32,9 +38,10 @@ There are several other side effects which occur when a new page is loaded in a 
 
 This can be confusing to think about without a visual demonstration, so let's check out some videos demonstrating accessibility problems and solutions.
 
-One of the biggest problems with SPA frameworks is keyboard and/or screen reader focus. This is a video demonstrating how focus changes between "normal" page loads using MacOS Voiceover on Safari. Because we're loading brand new static pages from a backend server, everything behaves as it should. Notice how the black Voiceover focus ring moves between elements until I click on the "Dragon Ball Z" link, which loads a new page and moves Voiceover focus back to "web content"[`1].
-
-VIDEO GO HERE
+One of the biggest problems with SPA frameworks is keyboard and/or screen reader focus. This is a video demonstrating how focus changes between "normal" page loads using MacOS Voiceover on Safari. Because we're loading brand new static pages from a backend server, everything behaves as it should. Notice how the black Voiceover focus ring moves between elements until I click on the "Dragon Ball Z" link, which loads a new page and moves Voiceover focus back to "web content"[^1].
+<div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+    <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/JtdxQbLglY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 And here is an example of an inaccessible set of pages, where content and URL changes are 100% JavaScript driven. Notice how:
 
@@ -42,8 +49,9 @@ And here is an example of an inaccessible set of pages, where content and URL ch
 - The scroll position remains stuck at the previous scroll position (middle of the page, not the top). Even though the browser and/or the screen reader itself has helpfully moved focus to the top of the document, you wouldn't know it until you attempt to navigate around. When you do start to navigate, the page snaps jarringly upwards to where focus actually is.
 - The title of the page hasn't changed, so there's no new announcement with a new page title when we click on links.
 
-VIDEO GO HERE
-
+<div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+<iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/mi4eOTChmFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 ### Adding the signals back in
 
 So, in order to make a client-driven route change accessible, we need to: 
@@ -57,7 +65,7 @@ Those first two pieces are fortunately pretty simple, but that last piece is tri
 Being thus limited to stuff within the document itself, some approaches are to:
 
 - Focus on the document `body` tag
-- Focus on the container node of the app (usually `<div id="target"></div>)
+- Focus on the container node of the app (usually `<div id="target"></div>`)
 - Focus on the topmost part of the app tree that changed (the approach of [Reach Router](https://reach.tech/router/accessibility))
 - Focus on the top level heading of the page (frequently an `h1` element)
 - Focus on a [skip navigation link](https://webaim.org/techniques/skipnav/) at the top of the page
@@ -68,8 +76,9 @@ Here's a video which fixes our previously inaccessible Bob Ross website. It scro
 
 - Focus on the first heading
 - Focus on a skip navigation link
-
-VIDEO GO HERE
+<div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+<iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/J9oR-Zn_vHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### The code
 
@@ -181,6 +190,27 @@ Here is some further reading on the topic if you'd like to dive deeper:
 
 - [A recent user testing research document](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) conducted by the Gatsby team, with an in-depth summary of the problems and commentary by users of assistive technology on what they like and don't like about the various focus methods. 
 
-[:^1] "Web content" is like a bounding box containing the website itself. When focus is on web content, you can "enter the web content," which is like diving into the document, and restricts voiceover navigation to the website itself. Without entering the web content, Voiceover navigates between controls in the application itself, which enables you to interact with the toolbar, back and forwards buttons, URL text field, etc.
+
+## Next up
+
+Next week, we'll take a look at *animations* for multistep forms. This is a small but important detail to consider for multistep forms. SPA frameworks like React enable rapid switches from one "page" to another, seeing as new pages are built dynamically in the browser. But for some visitors, these rapid transitions can lead to page transitions being missed! Animations can help to signal that transitions are occuring. 
+
+We'll learn more next week! Until then.
+
+## Table of contents:
+
+This is a series of blog posts which will cover each aspect of a great multi-step form experience separately. Check back for a new post each Monday until they're all done!
+
+- [Introduction](/multi-step-form-intro)
+- [Your tech stack](/multi-step-form-tech-stack/)
+- [Accessibility](/multi-step-form-accessibility) 
+- Animations: coming on **8/30/21**
+- Persistent state: coming on **9/6/21**
+- Input validation: coming on **9/13/21**
+- Putting it all together: coming on **9/20/21**
+
+## Footnotes:
+
+[^1]: "Web content" is like a bounding box containing the website itself. When focus is on web content, you can "enter the web content," which is like diving into the document, and restricts voiceover navigation to the website itself. Without entering the web content, Voiceover navigates between controls in the application itself, which enables you to interact with the toolbar, back and forwards buttons, URL text field, etc.
 
 <script src="/public/js/prism.js"></script>
