@@ -31,7 +31,7 @@ So! Let's explore how to make an accessible multi-step form in React. There are 
 
 Let's get all the benefits, minimize any technical snags, and make our UX as good as it can be.
 
-The first stop on the journey is [your tech stack](/multi-step-form-tech-stack/). Let's get started!
+The first stop on the journey is the tech stack that we're building the form with. Let's get started: [Part one: Your tech stack](/multi-step-form-tech-stack/)
 
 ## Table of contents:
 
@@ -39,7 +39,7 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 
 - [Introduction](/multi-step-form-intro)
 - [Your tech stack](/multi-step-form-tech-stack/)
-- Accessibility: coming on **8/23/21**
+- [Accessibility](/multi-step-form-accessibility/)
 - Animations: coming on **8/30/21**
 - Persistent state: coming on **9/6/21**
 - Input validation: coming on **9/13/21**

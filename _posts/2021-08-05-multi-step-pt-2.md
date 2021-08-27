@@ -71,9 +71,9 @@ Instead of a monolithic CSS library like Bootstrap, how about something smaller?
 
 ## Next up
 
-Next week, we'll take a look at *accessibility* for multistep forms. We touched briefly on the topic here as it pertains to download speeds and "ease of access," but when it comes to keyboard users and assistive technology, there are a number of things you need to do with a multistep form that you might take for granted in a single-page HTML form. 
+Next up, we'll take a look at *accessibility* for multistep forms. We touched briefly on the topic here as it pertains to download speeds and "ease of access," but when it comes to keyboard users and assistive technology, there are a number of things you need to do with a multistep form that you might take for granted in a single-page HTML form. 
 
-Stay tuned!
+Let's dive in: [Part two: Accessibility](/multi-step-form-accessibility/)
 
 ## Table of contents:
 
@@ -81,7 +81,7 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 
 - [Introduction](/multi-step-form-intro)
 - [Your tech stack](/multi-step-form-tech-stack/)
-- Accessibility: coming on **8/23/21**
+- [Accessibility](/multi-step-form-accessibility/)
 - Animations: coming on **8/30/21**
 - Persistent state: coming on **9/6/21**
 - Input validation: coming on **9/13/21**
