@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessible Multistep Forms in React with Awesome UX – Validation
+title: Multistep Forms in React with Awesome UX – Validation
 permalink: /multi-step-form-validation/
 author_profile: true
 read_time: true

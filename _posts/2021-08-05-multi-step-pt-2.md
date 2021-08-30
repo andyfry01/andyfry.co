@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessible Multistep Forms in React with Awesome UX – Tech Stack
+title: Multistep Forms in React with Awesome UX – Tech Stack
 permalink: /multi-step-form-tech-stack/
 author_profile: true
 read_time: true
@@ -82,7 +82,7 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 - [Introduction](/multi-step-form-intro)
 - [Your tech stack](/multi-step-form-tech-stack/)
 - [Accessibility](/multi-step-form-accessibility/)
-- Animations: coming on **8/30/21**
+- [Animations](/multi-step-form-animations/)
 - Persistent state: coming on **9/6/21**
 - Input validation: coming on **9/13/21**
 - Putting it all together: coming on **9/20/21**

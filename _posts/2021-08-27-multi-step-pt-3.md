@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessible Multistep Forms in React with Awesome UX – Accessibility
+title: Multistep Forms in React with Awesome UX – Accessibility
 permalink: /multi-step-form-accessibility/
 author_profile: true
 read_time: true
@@ -9,10 +9,6 @@ share: true
 related: true
 ---
 <link rel="stylesheet" href="/public/css/prism.css">
-
-
-
-## Accessibility
 
 Millions of web users are *visually impaired*, or otherwise need or want to use a [screen reader](https://en.wikipedia.org/wiki/Screen_reader) or other [assistive tools](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse the web. One of the web's many great achievements is that when a website is built with proper HTML, it's fully accessible! All of the standardized semantic tags we have at our disposal – [headings](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements), [paragraphs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p), [anchors](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a), [sections](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section), etc. – form a wonderful, standardized interface which enables assistive software to parse documents easily. This, in turn, makes it much easier for users of assistive devices to navigate pages when the usual visual experience is out of reach. 
 
@@ -193,9 +189,9 @@ Here is some further reading on the topic if you'd like to dive deeper:
 
 ## Next up
 
-Next week, we'll take a look at *animations* for multistep forms. This is a small but important detail to consider for multistep forms. SPA frameworks like React enable rapid switches from one "page" to another, seeing as new pages are built dynamically in the browser. But for some visitors, these rapid transitions can lead to page transitions being missed! Animations can help to signal that transitions are occuring. 
+Next week, we'll take a look at [animations](/multi-step-form-animations/) for multistep forms. This is a small but important detail to consider for multistep forms. SPA frameworks like React enable rapid switches from one "page" to another, seeing as new pages are built dynamically in the browser. But for some visitors, these rapid transitions can lead to page transitions being missed! Animations can help to signal that transitions are occuring. 
 
-We'll learn more next week! Until then.
+Let's dive into it! [Part three: animations](/multi-step-form-animations/)
 
 ## Table of contents:
 
@@ -204,7 +200,7 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 - [Introduction](/multi-step-form-intro)
 - [Your tech stack](/multi-step-form-tech-stack/)
 - [Accessibility](/multi-step-form-accessibility) 
-- Animations: coming on **8/30/21**
+- [Animations](/multi-step-form-animations/)
 - Persistent state: coming on **9/6/21**
 - Input validation: coming on **9/13/21**
 - Putting it all together: coming on **9/20/21**

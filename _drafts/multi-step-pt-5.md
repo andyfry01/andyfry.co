@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessible Multistep Forms in React with Awesome UX – Persistent State
+title: Multistep Forms in React with Awesome UX – Persistent State
 permalink: /multi-step-form-persistent-state/
 author_profile: true
 read_time: true
@@ -9,10 +9,6 @@ share: true
 related: true
 ---
 <link rel="stylesheet" href="/public/css/prism.css">
-
-
-
-## Persistent state
 
 The internet is a complicated place. Your average FE dev has a plethora of things they have to worry about and take into consideration: OAuth, sessions, cookies, tokens, third-party scripts and SaaS vendors of all varieties and descriptions. If you work in a big corporation, your "website" may be comprised of many different apps overseen by many different teams, with different stacks, dependency versions, deadlines, goals, and political aims. 
 
