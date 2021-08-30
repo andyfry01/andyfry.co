@@ -10,6 +10,8 @@ related: true
 ---
 <link rel="stylesheet" href="/public/css/fake-browser.css">
 <link rel="stylesheet" href="/public/css/2021-08-30-multi-step-pt-4/animations.css"/>
+<link rel="stylesheet" href="/public/css/prism.css">
+
 
 Your typical visitor is accustomed to page loads. A fresh request for a new HTML page will clear the viewport of content, trigger a browser's loading indicators, and usually takes a moment or two to complete. These are unmistakable indicators that "something new" is occurring, and cue us to start looking out for those new somethings. 
 
@@ -39,9 +41,97 @@ If you click the "Go to next step" button, the content will change. I've added i
 
 ### Example with animations
 
-This is the exact same page with the `fadeUpIn` animation from [Animate.css](https://animate.style/) added in. A very small, simple change, but it makes a huge difference! The transition point between steps is clear and unambigious. 
+This is the exact same page with the `fadeInUp` animation from [Animate.css](https://animate.style/) added in. A very small, simple change, but it makes a huge difference! The transition point between steps is clear and unambigious. 
 
 <div id="animations"></div>
+
+## Code 
+
+Here's the full example code, simplified for ease of reading. 
+
+This might look a little funny compared to "normal" React, but the concepts are all the same. Instead of using Node modules to include React in the app, we're using [JS module imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from [unpkg.com](https://unpkg.com/) instead. 
+
+Instead of using [JSX](https://reactjs.org/docs/introducing-jsx.html), which requires a transpilation step to transform it into [React.createElement calls](https://reactjs.org/docs/react-api.html#createelement), we're using an extremely cool no-transpilation JSX alternative: [HTM](https://github.com/developit/htm). 
+
+You can dig into more specifics about the code and how it works [here](https://preactjs.com/guide/v10/getting-started/#alternatives-to-jsx).
+
+```js
+import { h, Component, render } from "https://unpkg.com/preact@latest?module";
+import htm from "https://unpkg.com/htm?module";
+import { useState } from "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module";
+
+const html = htm.bind(h);
+
+const Page = (props) => {
+  const { label, title, onPageChange } = props
+
+  return html`<div class="animate__animated animate__fadeInUp">
+    <div>
+      <h1>${title}</h1>
+    </div>
+    <div>
+      <label for="demo-1">${label}</label>
+      <input
+        id="demo-1"
+        type="text"
+        placeholder="Fill in a value! (or not)"
+      />
+    </div>
+    <div class="">
+      <button onClick=${() => onPageChange()}>
+        Go to next step
+      </button>
+    </div>
+  </div>`;
+};
+
+const PageOne = (props) => {
+  const { onPageChange } = props
+  return html`
+    <${Page} 
+      title="Step one ☝️" 
+      label="What is your name?" 
+      onPageChange=${onPageChange} />`
+}
+
+const PageTwo = (props) => {
+  const { onPageChange } = props
+  return html`
+    <${Page} 
+      title="Step two ✌️" 
+      label="What is your quest?" 
+      onPageChange=${onPageChange} />`
+}
+
+const routes = { 
+  "one": PageOne,
+  "two": PageTwo
+}
+
+const App = (props) => {  
+  const [url, setUrl] = useState("https://website.com/what-is-your-name");
+  const [page, setPage] = useState("one")
+
+  const onPageChange = () => {
+    if (page === "one") {
+      setPage("two") 
+      setUrl("https://website.com/what-is-your-quest")
+    }
+
+    if (page === "two") {
+      setPage("one") 
+      setUrl("https://website.com/what-is-your-name")
+    }
+  }
+
+  return html`
+    <div aria-live="polite">
+      <${routes[page]} onPageChange=${onPageChange} />
+    </div>`;
+}
+
+render(html`<${App} />`, document.getElementById("app-root"));
+```
 
 ## Next up
 
@@ -64,3 +154,4 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 - Putting it all together: coming on **9/20/21**
 
 <script type="module" src="/public/preact-apps/2021-08-30-multi-step-pt-4/no-animations.mjs"></script>
+<script src="/public/js/prism.js"></script>
