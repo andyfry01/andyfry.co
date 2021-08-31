@@ -1,0 +1,33 @@
+pre {
+  display: grid;
+  grid-template-columns: calc(calc(100vw - 65rem) / 2)  minmax(576px, max-content) 1fr;
+  padding-left: 0.5rem !important;
+  position: relative;
+  width: 100%; /*Fallback for older browsers*/
+  width: 100vw; /*Percentage of full screen viewing width*/
+  left: calc(-50vw + 50%); /*Centres div*/
+}
+
+pre code {
+  grid-column: 2/3;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
+
+pre code span {
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
+
+pre {
+    font-size: 0.875rem !important;
+}   
+
+
+@media (min-width: 576px) {
+    pre {
+        font-size: 1rem !important;
+    }
+    
+}
+

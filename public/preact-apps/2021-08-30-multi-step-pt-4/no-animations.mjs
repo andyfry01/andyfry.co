@@ -88,7 +88,5 @@ const App = (props) => {
 }
 
 render(html`<${App} animations=${false} />`, document.getElementById("no-animations"));
-
-
 render(html`<${App} animations=${true} />`, document.getElementById("animations"));
 
