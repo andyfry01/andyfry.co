@@ -1,7 +1,7 @@
 # Dependencies
 kramdown:
   input: GFM
-highlighter:      pygments
+highlighter: rouge
 
 
 twitter_username: "andyyfry"
