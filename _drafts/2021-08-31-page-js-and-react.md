@@ -161,7 +161,7 @@ export default useRouter;
 ```
 
 <script src="/public/js/prism.js"></script>
-<script type="module" src="/public/preact-apps/page-js-and-react/app.mjs"></script>
+<script type="module" src="/public/preact-apps/page-js-and-react/app.js"></script>
 
 
 
