@@ -3,6 +3,7 @@ layout: default
 ---
 
 <article class="post">
+  {% include breadcrumbs.html %}
   <h1>{{ page.title }}</h1>
   <p class="text-xl text-indigo-700 mb-4">{{ page.date | date_to_string }}</p>
   {% assign document = post | default: page %}
