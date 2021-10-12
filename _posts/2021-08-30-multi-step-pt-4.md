@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multistep Forms in React with Awesome UX – Animations
+description: Third part of the multi-step forms in React guide, focusing on animations to communicate when changes occur.
 permalink: /multi-step-form-animations/
 author_profile: true
 read_time: true

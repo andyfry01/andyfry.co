@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multistep Forms in React with Awesome UX
+description: Introduction to an article series on making multi-step forms in React.
 permalink: /multi-step-form-intro/
 author_profile: true
 read_time: true

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Use Vanilla JS Routers with React 
+description: A breakdown and step-by-step guide for using vanilla JavaScript routing libraries with React.
 permalink: /vanilla-js-routers-with-react/
 author_profile: true
 read_time: true

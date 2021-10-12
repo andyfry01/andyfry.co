@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multistep Forms in React with Awesome UX – Accessibility
+description: Second part of the multi-step forms in React guide, focusing on accessibility.
 permalink: /multi-step-form-accessibility/
 author_profile: true
 read_time: true

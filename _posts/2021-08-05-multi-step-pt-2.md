@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multistep Forms in React with Awesome UX – Tech Stack
+description: First part of the multi-step forms in React guide, focusing on the tech stack choices for the app.
 permalink: /multi-step-form-tech-stack/
 author_profile: true
 read_time: true
