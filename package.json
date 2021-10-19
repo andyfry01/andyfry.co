@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@tailwindcss/typography": "^0.4.1",
-    "cssnano": "^5.0.7"
+    "@tailwindcss/typography": "^0.4.1"
   }
 }
