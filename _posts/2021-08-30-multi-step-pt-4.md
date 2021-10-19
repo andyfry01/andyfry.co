@@ -150,9 +150,9 @@ This is a series of blog posts which will cover each aspect of a great multi-ste
 - [Your tech stack](/multi-step-form-tech-stack/)
 - [Accessibility](/multi-step-form-accessibility) 
 - [Animations](/multi-step-form-animations/)
-- Persistent state: coming on **9/6/21**
-- Input validation: coming on **9/13/21**
-- Putting it all together: coming on **9/20/21**
+- [Persistent state](/multi-step-form-persistent-state/)
+- Input validation: coming on **10/25/21**
+- Putting it all together: coming on **11/1/21**
 
 <script type="module" src="/public/preact-apps/2021-08-30-multi-step-pt-4/no-animations.mjs"></script>
 <script src="/public/js/prism.js"></script>
