@@ -1,14 +1,10 @@
 const statusDisplay = document.querySelector('.game--status');
+const cells = document.querySelectorAll('.cell')
+const restartBtn = document.querySelector('.game--restart')
 
-let gameActive = true;
-let currentPlayer = "X";
-let gameState = ["", "", "", "", "", "", "", "", ""];
-
-const winningMessage = () => `Player ${currentPlayer} has won!`;
-const drawMessage = () => `Game ended in a draw!`;
-const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
-
-statusDisplay.innerHTML = currentPlayerTurn();
+const IN_PROGRESS = "in progress"
+const WIN = "win"
+const DRAW = "draw"
 
 const winningConditions = [
     [0, 1, 2],
@@ -21,8 +17,18 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
-function handleCellPlayed(clickedCell, clickedCellIndex) {
-    gameState[clickedCellIndex] = currentPlayer;
+let gameActive = true;
+let currentPlayer = "X";
+let gameState = ["", "", "", 
+                 "", "", "", 
+                 "", "", ""];
+
+const winningMessage = () => `Player ${currentPlayer} has won!`;
+const drawMessage = () => `Game ended in a draw!`;
+const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
+
+function handleCellPlayed(clickedCell, cellIndex) {
+    gameState[cellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 }
 
@@ -31,47 +37,53 @@ function handlePlayerChange() {
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
-function handleResultValidation() {
-    let roundWon = false;
-    for (let i = 0; i <= 7; i++) {
-        const winCondition = winningConditions[i];
-        let a = gameState[winCondition[0]];
-        let b = gameState[winCondition[1]];
-        let c = gameState[winCondition[2]];
-        if (a === '' || b === '' || c === '') {
-            continue;
-        }
-        if (a === b && b === c) {
-            roundWon = true;
-            break
-        }
-    }
-
-    if (roundWon) {
-        statusDisplay.innerHTML = winningMessage();
-        gameActive = false;
-        return;
-    }
-
-    let roundDraw = !gameState.includes("");
-    if (roundDraw) {
+const endGame = status => {
+    if (status === DRAW) {
         statusDisplay.innerHTML = drawMessage();
-        gameActive = false;
-        return;
+        return gameActive = false;
     }
-
-    handlePlayerChange();
+    
+    if (status === WIN) {
+        statusDisplay.innerHTML = winningMessage();
+        return gameActive = false;
+    }
 }
 
-function handleCellClick(clickedCellEvent) {
-    const clickedCell = clickedCellEvent.target;
-    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+function handleResultValidation() {
+    const gameStatus = winningConditions.reduce((status, winCondition) => {
+        const a = gameState[winCondition[0]]
+        const b = gameState[winCondition[1]]
+        const c = gameState[winCondition[2]]
+        
+        const incompleteVector = (a === '' && b === '' && c === '')
+        const filledVector = (a === b && b === c)
+        const boardFilledUp = !gameState.includes("") 
+        const gameFinished = filledVector && !incompleteVector
 
-    if (gameState[clickedCellIndex] !== "" || !gameActive) {
+        if (status === WIN) {
+            return WIN
+        }
+
+        if (boardFilledUp || status === DRAW) {
+            return DRAW
+        }
+        
+        return gameFinished ? WIN : IN_PROGRESS;
+    }, IN_PROGRESS)
+
+    return gameStatus === IN_PROGRESS ? handlePlayerChange() : endGame(gameStatus)
+}
+
+function handleCellClick(e) {
+    const clickedCell = e.target;
+    const cellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+    const cellAlreadySelected = gameState[cellIndex] !== "";
+
+    if (cellAlreadySelected || !gameActive) {
         return;
     }
 
-    handleCellPlayed(clickedCell, clickedCellIndex);
+    handleCellPlayed(clickedCell, cellIndex);
     handleResultValidation();
 }
 
@@ -80,8 +92,9 @@ function handleRestartGame() {
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
-    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+    cells.forEach(cell => cell.innerHTML = "");
 }
 
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
-document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
+handleRestartGame()
+cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+restartBtn.addEventListener('click', handleRestartGame);
