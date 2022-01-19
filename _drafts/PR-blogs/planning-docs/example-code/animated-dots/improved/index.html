@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <!-- <div id="desc">
+      <b>Interactive Dots:</b>Mouse over them to see them grow and mouse down to
+      activate force field!
+    </div> -->
+    <div class="accessibility-controls">
+      <h1>Accessibility controls</h1>
+      <div class="prefers-reduced-motion">
+        <p>This demo features animations that may disturb visitors with vestibular disorders. By default, these animations have been turned off and substituted with alternative interactive effects.</p>
+        <p>If you would like to see these animations, click the "Toggle Animations" button. Animation controls have been included to reduce the size and animation speed of the demo, which may reduce any vestibular disturbances.</p>
+        <fieldset aria-live="polite">
+          <button id="toggle-animations">Toggle Animations</button>
+          <p class="animation-status">Animations are: off</p>
+        </fieldset>
+      </div>
+      <fieldset aria-live="polite">
+        <label for="element-width">Canvas width</label>
+        <input type="range" id="element-width" name="element-width" min="10" max="100" value="100" step="5"></input>
+        <p class="current-width">Current canvas width: 100%</p>
+      </fieldset>
+      <fieldset aria-live="polite">
+        <label for="animation-speed">Animation speed</label>
+        <input type="range" id="animation-speed" name="animation-speed" min="10" max="100" value="100" step="5"></input>
+        <p class="current-speed">Current animation speed: 100 frames per second</p>
+      </fieldset>
+      
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
