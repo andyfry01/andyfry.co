@@ -1,0 +1,43 @@
+span.color-fg-muted {
+    display: none;
+}
+
+span.Label {
+    display: none;
+}
+
+div.timeline-comment-actions {
+    display: none;
+}
+
+div.review-thread-reply {
+    display: none;
+}
+
+div.js-suggested-changes-contents {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inline-comments {
+    display: table-row;
+}
+
+.empty-cell {
+    display: none;
+}
+
+.diff-table tbody tr:nth-child(1) {
+    display: none;
+}
+
+.line-comments.p-md-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
