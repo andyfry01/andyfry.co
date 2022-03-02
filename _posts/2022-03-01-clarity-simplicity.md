@@ -7,6 +7,7 @@ read_time: true
 comments: true
 share: true
 related: true
+prism-centering: false
 description: "Part three of a three part series exploring code review best practices. This post focuses on clarity and simplicity, with a focus on what exactly these concepts imply, general tools to increase simplicity and clarity in a codebase, and a review of a real piece of code for those same qualities."
 header:
   large_image: /public/img/code-review-how-to/clarity-simplicity.png
