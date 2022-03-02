@@ -11,7 +11,7 @@ description: "Code reviewing a cool dot thing!"
 prism-centering: false
 header:
   large_image: /public/img/code-review-how-to/organization.jpg
-  : /public/img/code-review-how-to/organization-social.jpg
+  og_image: /public/img/code-review-how-to/organization-social.jpg
 ---
 <link rel="stylesheet" href="/public/css/prism(3).css">
 

@@ -9,6 +9,9 @@ share: true
 related: true
 description: "Code reviewing the game of pong!"
 prism-centering: false
+header:
+  large_image: /public/img/code-review-how-to/brevity-repetition.png
+  og_image: /public/img/code-review-how-to/brevity-repetition-social.png
 ---
 <link rel="stylesheet" href="/public/css/prism(3).css">
 

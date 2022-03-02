@@ -9,7 +9,9 @@ share: true
 related: true
 description: "Code reviewing the game of tic tac toe!"
 prism-centering: false
-
+header:
+  large_image: /public/img/code-review-how-to/clarity-simplicity.png
+  og_image: /public/img/code-review-how-to/clarity-simplicity-social.png
 ---
 <link rel="stylesheet" href="/public/css/prism(3).css">
 
