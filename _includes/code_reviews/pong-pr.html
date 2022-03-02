@@ -1,0 +1,2172 @@
+<link rel="stylesheet" href="/public/css/test-purify.css">
+
+<div class="js-file-content Details-content--hidden" data-hydro-view="{&quot;event_type&quot;:&quot;pull_request.select_diff_range&quot;,&quot;payload&quot;:{&quot;actor_id&quot;:12447503,&quot;pull_request_id&quot;:826934801,&quot;repository_id&quot;:376936414,&quot;diff_type&quot;:&quot;UNIFIED&quot;,&quot;whitespace_ignored&quot;:false,&quot;originating_url&quot;:&quot;https://github.com/andyfry01/andyfry.co/diffs?base_sha=5222634b69fb06c055500de5085861f1e118efa2&amp;bytes=15730&amp;commentable=true&amp;lines=177&amp;pull_number=1&amp;responsive=true&amp;sha1=5222634b69fb06c055500de5085861f1e118efa2&amp;sha2=42d96fb860b90cfe00910aa8eecda9da47cf0a0c&amp;start_entry=1&amp;sticky=true&amp;w=false&quot;,&quot;user_id&quot;:12447503}}" data-hydro-view-hmac="97e70d1f02e8e6cadcf750243243d5c5ea9a6649ed058d397f48e69def3bcf12">
+    <div class="data highlight js-blob-wrapper" style="overflow-x: auto">
+      
+
+
+      <table class=" diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8" data-paste-markdown-skip="">
+
+            
+  <tbody><tr data-position="0">
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8HL0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8HR1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+<td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,123 @@</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R1" data-line-number="1" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">gameState</span> <span class="pl-c1">=</span> <span class="pl-s">'start'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r789034206" data-gid="PRRC_kwDOFneX3s4vB7Te" data-url="/_render_node/PRRC_kwDOFneX3s4vB7Te/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="f74488f6e0747e4331e18e8f8a7841435ce6a752c940ad0ede7f36495f3a4e0c" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r789034206" id="r789034206-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">There are a lot of hardcoded strings throughout this app:</p>
+<ul dir="auto">
+<li>Game states: <code>"start"</code>, <code>"play"</code></li>
+<li>Keys that players have pressed to move the paddles or start the game: <code>"w"</code>, <code>"s"</code>,<code>"ArrowUp"</code>, <code>"ArrowDown"</code>, <code>"Enter"</code></li>
+<li>And even some hard-coded numbers: <code>0</code> and <code>1</code> are used to represent the four directions that the ball can move</li>
+</ul>
+<p dir="auto">Strings are great to represent state concepts: they are clear and expressive indicators of what a state change signifies. I would argue that numbers are not as expressive as strings for communicating state changes. The usage of numbers for ball direction is kind of "boolean" in nature: <code>0</code> for "up", <code>1</code> for "down", but you have to study the code closely to understand what <code>0</code> actually means in the context in which it's being used. A string that clearly states "up" or "down" doesn't require close study to understand.</p>
+<p dir="auto">So! We've got some good strategies for representing state change, and some strategies that would benefit from refactoring to strings, but we can do better still. Seeing as the strings are hard-coded, it makes it easier to misspell them, or forget to update all of the instances of a hardcoded string if you decide to refactor the string in the future.</p>
+<p dir="auto">We can make our own home-rolled <a href="https://www.typescriptlang.org/docs/handbook/enums.html" rel="nofollow">Typescript-style enums</a> to save these strings in objects. This lets us divide the strings up into categories (states, movement keys, ball directions), and makes them easy and foolproof to update or expand if we need to:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-v">MovementKeys</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+<span class="pl-c1">P1_UP</span>: <span class="pl-s">"w"</span><span class="pl-kos">,</span>
+<span class="pl-c1">P1_DOWN</span>: <span class="pl-s">"s"</span><span class="pl-kos">,</span>
+<span class="pl-c1">P2_UP</span>: <span class="pl-s">"ArrowUp"</span><span class="pl-kos">,</span>
+<span class="pl-c1">P2_DOWN</span>: <span class="pl-s">"ArrowDown"</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-v">Keys</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+<span class="pl-c1">ENTER</span>: <span class="pl-s">"Enter"</span><span class="pl-kos">,</span>
+...<span class="pl-v">MovementKeys</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-v">GameStates</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+<span class="pl-c1">START</span>: <span class="pl-s">"start"</span><span class="pl-kos">,</span>
+<span class="pl-c1">PLAY</span>: <span class="pl-s">"play"</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-v">BallDirections</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+<span class="pl-c1">UP</span>: <span class="pl-s">"up"</span><span class="pl-kos">,</span>
+<span class="pl-c1">DOWN</span>: <span class="pl-s">"down"</span><span class="pl-kos">,</span>
+<span class="pl-c1">LEFT</span>: <span class="pl-s">"left"</span><span class="pl-kos">,</span>
+<span class="pl-c1">RIGHT</span>: <span class="pl-s">"right"</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// usage examples: </span>
+<span class="pl-k">let</span> <span class="pl-s1">gameState</span> <span class="pl-c1">=</span> <span class="pl-v">GameStates</span><span class="pl-kos">.</span><span class="pl-c1">START</span><span class="pl-kos">;</span>
+
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-v">MovementKeys</span><span class="pl-kos">.</span><span class="pl-c1">P1_UP</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-c">// move p1 paddle up</span>
+<span class="pl-kos">}</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const MovementKeys = {
+P1_UP: &quot;w&quot;,
+P1_DOWN: &quot;s&quot;,
+P2_UP: &quot;ArrowUp&quot;,
+P2_DOWN: &quot;ArrowDown&quot;,
+};
+
+const Keys = {
+ENTER: &quot;Enter&quot;,
+...MovementKeys,
+};
+
+const GameStates = {
+START: &quot;start&quot;,
+PLAY: &quot;play&quot;,
+};
+
+const BallDirections = {
+UP: &quot;up&quot;,
+DOWN: &quot;down&quot;,
+LEFT: &quot;left&quot;,
+RIGHT: &quot;right&quot;,
+};
+
+// usage examples: 
+let gameState = GameStates.START;
+
+if (e.key == MovementKeys.P1_UP) {
+// move p1 paddle up
+}" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R2" data-line-number="2" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">paddle_1</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.paddle_1'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R3" data-line-number="3" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">paddle_2</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.paddle_2'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R4" data-line-number="4" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">board</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.board'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R5" data-line-number="5" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">initial_ball</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.ball'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R6" data-line-number="6" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">ball</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.ball'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R7" data-line-number="7" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">score_1</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.player_1_score'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R8" data-line-number="8" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">score_2</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.player_2_score'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.message'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R10" data-line-number="10" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">paddle_1_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R11" data-line-number="11" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">paddle_2_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R12" data-line-number="12" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">initial_ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R13" data-line-number="13" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">initial_ball_coord</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R14" data-line-number="14" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">board_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">board</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R15" data-line-number="15" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">paddle_common</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R16" data-line-number="16" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.paddle'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r789013834" data-gid="PRRC_kwDOFneX3s4vB2VK" data-url="/_render_node/PRRC_kwDOFneX3s4vB2VK/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="e0fe17ccca4839ea84ca564f0b9c5fdfc3bf00b7a52a025b407f0d1d537dd085" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r789013834" id="r789013834-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">I like that all of your setup code is organized at the top of the file. By putting you DOM element selectors and state in one place, it makes it much easier to navigate between what your app is acting on and the functions that perform the actions.</p>
+<p dir="auto">However, you've got game state, DOM selectors, and game constants all mixed together in one heap. You can make your code even easier to understand for outsiders by organizing them into their own separate categories, separated by newlines.</p>
+<p dir="auto">Additionally, many things which are effectively immutable (your DOM elements, the bounding rects of the board and paddle) are defined with <code>let</code> variables. <code>let</code> implies that a variable will change over the runtime of a program, and <code>const</code> signifies that it won't. If you define your immutable variables with <code>const</code> and your mutable variables with <code>let</code>, you can better communicate to the reader what is static and what is fluid.</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-c">// DOM elements</span>
+<span class="pl-k">const</span> <span class="pl-s1">paddle_1</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".paddle_1"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">paddle_2</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".paddle_2"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">board</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".board"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">initial_ball</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".ball"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">ball</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".ball"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">score_1</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".player_1_score"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">score_2</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".player_2_score"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".message"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">paddle_common</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".paddle"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// constants</span>
+<span class="pl-k">const</span> <span class="pl-s1">board_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">board</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">initial_ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// state</span>
+<span class="pl-k">let</span> <span class="pl-s1">gameState</span> <span class="pl-c1">=</span> <span class="pl-v">GameStates</span><span class="pl-kos">.</span><span class="pl-c1">START</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">initial_ball_coord</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">paddle_1_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">paddle_2_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s">``</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// DOM elements
+const paddle_1 = document.querySelector(&quot;.paddle_1&quot;);
+const paddle_2 = document.querySelector(&quot;.paddle_2&quot;);
+const board = document.querySelector(&quot;.board&quot;);
+const initial_ball = document.querySelector(&quot;.ball&quot;);
+const ball = document.querySelector(&quot;.ball&quot;);
+const score_1 = document.querySelector(&quot;.player_1_score&quot;);
+const score_2 = document.querySelector(&quot;.player_2_score&quot;);
+const message = document.querySelector(&quot;.message&quot;);
+const paddle_common = document.querySelector(&quot;.paddle&quot;).getBoundingClientRect();
+
+// constants
+const board_coord = board.getBoundingClientRect();
+const initial_ball_coord = ball.getBoundingClientRect();
+
+// state
+let gameState = GameStates.START;
+let ball_coord = initial_ball_coord;
+let paddle_1_coord = paddle_1.getBoundingClientRect();
+let paddle_2_coord = paddle_2.getBoundingClientRect();
+``" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R17" data-line-number="17" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R18" data-line-number="18" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">dx</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r789008679" data-gid="PRRC_kwDOFneX3s4vB1En" data-url="/_render_node/PRRC_kwDOFneX3s4vB1En/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="60e436b7f109b8563a39144425ba4f0b3d008ee8803d3e0291283e0a5d62c78a" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r789008679" id="r789008679-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">These random numbers you're generating are used repeatedly in numerous places: lines 18-21, 30-33, 88-89, and 97-98 all use the same random number generator functions. If you wrap this repetitive code up in a function, you can:</p>
+<ul dir="auto">
+<li>give the function a name (like <code>randomCoordinate</code> or <code>randomDirection</code>), which will help to express what those random numbers represent, and will aid comprehension for others who are reading your code.</li>
+<li>give yourself an easy way to update all instances of those random numbers. Maybe in the future you decide that you don't want to round down, or maybe you want to increase or decrease what you're multiplying or adding to your random coordinates to add more variation to ball placement between rounds. As it is, you'd have to update all of your random number functions in many places, and you could miss some instances if you're not diligent. If those parameters are wrapped up in a function, however, then you only have to update them in one place and you're done!</li>
+</ul>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-en">randomCoord</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-en">randomDirection</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">let</span> <span class="pl-s1">dx</span> <span class="pl-c1">=</span> <span class="pl-en">randomCoord</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">dy</span> <span class="pl-c1">=</span> <span class="pl-en">randomCoord</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">dxd</span> <span class="pl-c1">=</span> <span class="pl-en">randomDirection</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">dyd</span> <span class="pl-c1">=</span> <span class="pl-en">randomDirection</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// etc</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const randomCoord = () => Math.floor(Math.random() * 4) + 3;
+const randomDirection = () => Math.floor(Math.random() * 2);
+
+let dx = randomCoord();
+let dy = randomCoord();
+let dxd = randomDirection();
+let dyd = randomDirection();
+
+// etc" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R19" data-line-number="19" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">dy</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R20" data-line-number="20" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">dxd</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R21" data-line-number="21" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">let</span> <span class="pl-s1">dyd</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R22" data-line-number="22" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R23" data-line-number="23" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">'keydown'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r789068693" data-gid="PRRC_kwDOFneX3s4vCDuV" data-url="/_render_node/PRRC_kwDOFneX3s4vCDuV/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="74b6f3d4221ffb94d886630702cafa7e684317fffea1f1c0ea69c48c0bf67d99" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r789068693" id="r789068693-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">The nature of the <code>keydown</code> event listener we're working with here has divided the code within into two nice parts: code that starts the game, and code that moves the paddle. Including both pieces as part of one big callback, however, makes things just a little bit harder to navigate.</p>
+<p dir="auto">If we take these individual <code>if</code> blocks and break them up into functions, we can simultaneously give names to what's being done and make it easier for future readers to ignore what they're not interested in. Need to know about the mechanics for how the rounds are started? Look at <code>startRound</code>. Need to change how the paddles move? Look in <code>movePaddle</code>.</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-en">handleKeyPress</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">===</span> <span class="pl-v">Keys</span><span class="pl-kos">.</span><span class="pl-c1">ENTER</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-en">startRound</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">gameState</span> <span class="pl-c1">===</span> <span class="pl-v">GameStates</span><span class="pl-kos">.</span><span class="pl-c1">PLAY</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-en">values</span><span class="pl-kos">(</span><span class="pl-v">MovementKeys</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">includes</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-en">movePaddle</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const handleKeyPress = (e) => {
+if (e.key === Keys.ENTER) {
+startRound();
+}
+
+if (gameState === GameStates.PLAY &amp;&amp; Object.values(MovementKeys).includes(e.key)) {
+movePaddle(e)
+}
+};" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R24" data-line-number="24" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'Enter'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R25" data-line-number="25" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">gameState</span> <span class="pl-c1">=</span> <span class="pl-s1">gameState</span> <span class="pl-c1">==</span> <span class="pl-s">'start'</span> ? <span class="pl-s">'play'</span> : <span class="pl-s">'start'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R26" data-line-number="26" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">gameState</span> <span class="pl-c1">==</span> <span class="pl-s">'play'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R27" data-line-number="27" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">message</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s">'Game Started'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R28" data-line-number="28" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">message</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">=</span> <span class="pl-c1">42</span> <span class="pl-c1">+</span> <span class="pl-s">'vw'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R29" data-line-number="29" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-en">requestAnimationFrame</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R30" data-line-number="30" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">dx</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R31" data-line-number="31" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">dy</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R32" data-line-number="32" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">dxd</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R33" data-line-number="33" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">dyd</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R34" data-line-number="34" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-en">moveBall</span><span class="pl-kos">(</span><span class="pl-s1">dx</span><span class="pl-kos">,</span> <span class="pl-s1">dy</span><span class="pl-kos">,</span> <span class="pl-s1">dxd</span><span class="pl-kos">,</span> <span class="pl-s1">dyd</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R35" data-line-number="35" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R36" data-line-number="36" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R37" data-line-number="37" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R38" data-line-number="38" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">gameState</span> <span class="pl-c1">==</span> <span class="pl-s">'play'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R39" data-line-number="39" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'w'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r791019782" data-gid="PRRC_kwDOFneX3s4vJgEG" data-url="/_render_node/PRRC_kwDOFneX3s4vJgEG/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="19e4337c768f2869da567ba24ac9a3299139599c50add0cf2f602dac415c6cbf" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r791019782" id="r791019782-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">There's a lot of repeated code in here for moving paddles up and down, with only slight variations between the various implementations (which paddle we're moving, which direction, etc.). To make this code a little shorter, and to make it easier to understand at a glance, I'd suggest abstracting all this into <code>movePaddleDown</code> and <code>movePaddleUp</code> functions. That, combined with a little bit of thoughtful variable naming and some nice ES6 string-template code, can make this a lot easier to grok and work with:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-c">// an example implementation for movePaddleUp</span>
+<span class="pl-c">// movePaddleDown would be the same thing, but with all the math appropriately flipped around</span>
+<span class="pl-k">const</span> <span class="pl-en">movePaddleUp</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">paddle</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-k">const</span> <span class="pl-s1">nextPosition</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">max</span><span class="pl-kos">(</span>
+<span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">,</span>
+<span class="pl-s1">paddle</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">-</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span> <span class="pl-c1">*</span> <span class="pl-s1">movementInterval</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">return</span> <span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">nextPosition</span><span class="pl-kos">}</span></span>px`</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// Example function calls: </span>
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-v">MovementKeys</span><span class="pl-kos">.</span><span class="pl-c1">P1_UP</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span> <span class="pl-en">movePaddleUp</span><span class="pl-kos">(</span><span class="pl-s1">paddle_1_coord</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-v">MovementKeys</span><span class="pl-kos">.</span><span class="pl-c1">P1_DOWN</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span> <span class="pl-en">movePaddleDown</span><span class="pl-kos">(</span><span class="pl-s1">paddle_1_coord</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// an example implementation for movePaddleUp
+// movePaddleDown would be the same thing, but with all the math appropriately flipped around
+const movePaddleUp = (paddle) => {
+const nextPosition = Math.max(
+board_coord.top,
+paddle.top - window.innerHeight * movementInterval
+);
+
+return `${nextPosition}px`;
+};
+
+// Example function calls: 
+if (e.key == MovementKeys.P1_UP) {
+paddle_1.style.top = movePaddleUp(paddle_1_coord);
+}
+
+if (e.key == MovementKeys.P1_DOWN) {
+paddle_1.style.top = movePaddleDown(paddle_1_coord);
+}" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R40" data-line-number="40" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R41" data-line-number="41" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">max</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R42" data-line-number="42" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R43" data-line-number="43" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">paddle_1_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">-</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span> <span class="pl-c1">*</span> <span class="pl-c1">0.06</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R44" data-line-number="44" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R45" data-line-number="45" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_1_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R46" data-line-number="46" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R47" data-line-number="47" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'s'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R48" data-line-number="48" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R49" data-line-number="49" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">min</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R50" data-line-number="50" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span> <span class="pl-c1">-</span> <span class="pl-s1">paddle_common</span><span class="pl-kos">.</span><span class="pl-c1">height</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R51" data-line-number="51" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">paddle_1_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">+</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span> <span class="pl-c1">*</span> <span class="pl-c1">0.06</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R52" data-line-number="52" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R53" data-line-number="53" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_1_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_1</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R54" data-line-number="54" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R55" data-line-number="55" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R56" data-line-number="56" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'ArrowUp'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R57" data-line-number="57" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R58" data-line-number="58" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">max</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R59" data-line-number="59" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R60" data-line-number="60" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">paddle_2_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">-</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span> <span class="pl-c1">*</span> <span class="pl-c1">0.1</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r791015736" data-gid="PRRC_kwDOFneX3s4vJfE4" data-url="/_render_node/PRRC_kwDOFneX3s4vJfE4/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="4745a0b93f5cf9cf0a3ff7540ba7c435fb157ad3fe8af65b0b1831c45d738b11" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r791015736" id="r791015736-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">This is a prime example of how hard-coded values used repetitively across a codebase can quietly introduce what I will call "unintended functionality". Nothing is "broken" per se, so you couldn't properly call it a "bug" in the sense that most people would understand that term, but I don't think you intended to give player two such a huge structural advantage over player one.</p>
+<p dir="auto">Player two's paddle moves almost twice as fast as player one's paddle (<code>0.1px</code> per keystroke for player two, <code>0.06px</code> for player one). If this movement interval had originally been coded as a constant, with the value living and being updated from a single point, then this wouldn't have made it into the final version.</p>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R61" data-line-number="61" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R62" data-line-number="62" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_2_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R63" data-line-number="63" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R64" data-line-number="64" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'ArrowDown'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R65" data-line-number="65" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R66" data-line-number="66" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">min</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R67" data-line-number="67" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span> <span class="pl-c1">-</span> <span class="pl-s1">paddle_common</span><span class="pl-kos">.</span><span class="pl-c1">height</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R68" data-line-number="68" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-s1">paddle_2_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">+</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span> <span class="pl-c1">*</span> <span class="pl-c1">0.1</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R69" data-line-number="69" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">		<span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R70" data-line-number="70" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">paddle_2_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">paddle_2</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R71" data-line-number="71" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R72" data-line-number="72" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R73" data-line-number="73" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R74" data-line-number="74" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R75" data-line-number="75" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-en">moveBall</span><span class="pl-kos">(</span><span class="pl-s1">dx</span><span class="pl-kos">,</span> <span class="pl-s1">dy</span><span class="pl-kos">,</span> <span class="pl-s1">dxd</span><span class="pl-kos">,</span> <span class="pl-s1">dyd</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R76" data-line-number="76" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R77" data-line-number="77" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dyd</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R78" data-line-number="78" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R79" data-line-number="79" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span> <span class="pl-c1">&gt;=</span> <span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R80" data-line-number="80" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dyd</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R81" data-line-number="81" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R82" data-line-number="82" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R83" data-line-number="83" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">paddle_1_coord</span><span class="pl-kos">.</span><span class="pl-c1">right</span> <span class="pl-c1">&amp;&amp;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R84" data-line-number="84" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&gt;=</span> <span class="pl-s1">paddle_1_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&amp;&amp;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R85" data-line-number="85" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">paddle_1_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R86" data-line-number="86" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R87" data-line-number="87" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dxd</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R88" data-line-number="88" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dx</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R89" data-line-number="89" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dy</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R90" data-line-number="90" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R91" data-line-number="91" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R92" data-line-number="92" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">right</span> <span class="pl-c1">&gt;=</span> <span class="pl-s1">paddle_2_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">&amp;&amp;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R93" data-line-number="93" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&gt;=</span> <span class="pl-s1">paddle_2_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&amp;&amp;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R94" data-line-number="94" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">paddle_2_coord</span><span class="pl-kos">.</span><span class="pl-c1">bottom</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R95" data-line-number="95" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R96" data-line-number="96" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dxd</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R97" data-line-number="97" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dx</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R98" data-line-number="98" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">dy</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R99" data-line-number="99" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R100" data-line-number="100" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">if</span> <span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R101" data-line-number="101" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">||</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R102" data-line-number="102" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">right</span> <span class="pl-c1">&gt;=</span> <span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">right</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R103" data-line-number="103" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R104" data-line-number="104" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">&lt;=</span> <span class="pl-s1">board_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R105" data-line-number="105" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">score_2</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-c1">+</span><span class="pl-s1">score_2</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R106" data-line-number="106" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R107" data-line-number="107" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">score_1</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-c1">+</span><span class="pl-s1">score_1</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R108" data-line-number="108" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R109" data-line-number="109" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">gameState</span> <span class="pl-c1">=</span> <span class="pl-s">'start'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R110" data-line-number="110" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R111" data-line-number="111" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">initial_ball_coord</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R112" data-line-number="112" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-c1">style</span> <span class="pl-c1">=</span> <span class="pl-s1">initial_ball</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R113" data-line-number="113" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">message</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s">'Press Enter to Play Pong'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R114" data-line-number="114" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-s1">message</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">=</span> <span class="pl-c1">38</span> <span class="pl-c1">+</span> <span class="pl-s">'vw'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R115" data-line-number="115" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-k">return</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R116" data-line-number="116" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R117" data-line-number="117" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span> <span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">+</span> <span class="pl-s1">dy</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-s1">dyd</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span> ? <span class="pl-c1">-</span><span class="pl-c1">1</span> : <span class="pl-c1">1</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+  
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+    
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+  <div class="js-comments-holder">
+      
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r791027513" data-gid="PRRC_kwDOFneX3s4vJh85" data-url="/_render_node/PRRC_kwDOFneX3s4vJh85/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="8d00e566fe4bed0490f5a4e38044f7a068077aba80f3d0153cf23c2c3a2ac323" data-thread-side="right">
+<div class="edit-comment-hide">
+  
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+      <span class="mr-2">
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+      </span>
+
+    <h4 class="f5 text-normal d-inline">
+      <strong>
+          
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+      </strong>
+      <span class="color-fg-muted">
+
+          <a href="#r791027513" id="r791027513-permalink" class="js-timestamp Link--secondary d-inline-block">
+            <relative-time datetime="2022-01-24T18:26:10Z" class="no-wrap" title="Jan 24, 2022, 11:26 AM MST">8 days ago</relative-time>
+          </a>
+
+      </span>
+
+      </h4>
+
+      
+
+
+    <task-lists sortable="">
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+        <p dir="auto">There's a lot of stuff going on in here:</p>
+<ul dir="auto">
+<li>Math to determine the next <code>top</code> and <code>left</code> position of the ball</li>
+<li>Logic to determine whether the ball should move up, down, left or right on the next frame</li>
+<li>Coercion of a number value to a string by way of adding a number to a string literal</li>
+<li>Setting the measurement unit for the value derived by all of the above (<code>px</code>)</li>
+<li>And finally, setting the actual property of the ball's DOM object to the final string so we can move the ball</li>
+</ul>
+<p dir="auto">It is terse, which is one dimension by which you can measure the readability of code, but I'd also call it opaque in meaning and in function, which makes it less readable.</p>
+<p dir="auto">A lot of assumed knowledge of what these variables mean and experience with the weird, hairy corners of JS – specifically how the language handles things like combining numbers with strings using the <code>+</code> operator – is required to grasp the functionality in full.</p>
+<p dir="auto">Using a couple variable names, some of the constants we mentioned in another comment, and ES6 string templating, we can make this a lot more understandable while only making the code a little bit longer:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-s1">nextTopCoord</span> <span class="pl-c1">=</span> <span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">+</span> <span class="pl-s1">dy</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-s1">dyd</span> <span class="pl-c1">===</span> <span class="pl-v">BallDirections</span><span class="pl-kos">.</span><span class="pl-c1">UP</span> ? <span class="pl-c1">-</span><span class="pl-c1">1</span> : <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">=</span> <span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">nextTopCoord</span><span class="pl-kos">}</span></span>px`</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// same thing for the next left coordinate</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const nextTopCoord = ball_coord.top + dy * (dyd === BallDirections.UP ? -1 : 1);
+ball.style.top = `${nextTopCoord}px`;
+
+// same thing for the next left coordinate" tabindex="0" role="button">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+      </div>
+    </task-lists>
+
+        
+
+        
+
+      <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+        
+
+
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+  </div>
+
+    
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R118" data-line-number="118" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">=</span> <span class="pl-s1">ball_coord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">+</span> <span class="pl-s1">dx</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-s1">dxd</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span> ? <span class="pl-c1">-</span><span class="pl-c1">1</span> : <span class="pl-c1">1</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R119" data-line-number="119" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-s1">ball_coord</span> <span class="pl-c1">=</span> <span class="pl-s1">ball</span><span class="pl-kos">.</span><span class="pl-en">getBoundingClientRect</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R120" data-line-number="120" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-en">requestAnimationFrame</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R121" data-line-number="121" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">	<span class="pl-en">moveBall</span><span class="pl-kos">(</span><span class="pl-s1">dx</span><span class="pl-kos">,</span> <span class="pl-s1">dy</span><span class="pl-kos">,</span> <span class="pl-s1">dxd</span><span class="pl-kos">,</span> <span class="pl-s1">dyd</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R122" data-line-number="122" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="f3369407ac6629ffc0a237dc17a9cae13b02ae5bcb7e8c6184902dbedaebb24d">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-0e420a5e92d02f92d0a9d8a004d6fdffbe2c8bb25cf31d9c839d39ada5de22c8R123" data-line-number="123" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+      <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+
+      </tbody></table>
+    </div>
+
+</div>

@@ -1,0 +1,3260 @@
+<link rel="stylesheet" href="/public/css/test-purify.css">
+
+<div class="data highlight js-blob-wrapper" style="overflow-x: auto">
+    
+
+
+    <table class=" diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44" data-paste-markdown-skip="">
+
+          
+<tbody><tr data-position="0">
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44HL0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44HR1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+<td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,170 @@</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R1" data-line-number="1" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">onload</span> <span class="pl-c1">=</span> <span class="pl-en">init</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788179756" data-gid="PRRC_kwDOFneX3s4u-qss" data-url="/_render_node/PRRC_kwDOFneX3s4u-qss/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="8279886f92163b0c4dddefba83aaaba7dfad933e77c5914e6620b0add3ee3e3e" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788179756" id="r788179756-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto"><code>window.onload</code> isn't needed in this case. If the <code>script</code> tag for script.js was included in the <code>head</code> element of <code>index.html</code>, you'd need to wait for the <code>body</code> content to load before running any code (otherwise stuff like <code>document.getElementsByClassname</code> wouldn't have any elements to query!).</p>
+<p dir="auto">Putting scripts in <code>head</code> used to be the convention, but now scripts are typically placed at the bottom of the <code>body</code> element. By the time the browser hits the script tag, all of the DOM that your script needs has already been rendered on the page, so you don't need to wait for the window to load at all.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R2" data-line-number="2" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-en">init</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788243118" data-gid="PRRC_kwDOFneX3s4u-6Ku" data-url="/_render_node/PRRC_kwDOFneX3s4u-6Ku/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="a7d99fd91a53e0db2761277371c7e438ab279933d144c9cd9ba7056c476930ea" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788243118" id="r788243118-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">This <code>init</code> function contains your whole app, but a name like <code>init</code> implies that the function runs the bootstrapping code for the app, so we have a mismatch between what the function implies and what it actually does.</p>
+<p dir="auto">In order to separate out the app from the app's bootstrapping code, I'd suggest the following refactor. This can live at the bottom of the file and be called straight away:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-s1">animate</span><span class="pl-kos"></span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-c">// start up animation code</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">const</span> <span class="pl-en">rafPolyfill</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-c">// contains polyfill code, see note below</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">const</span> <span class="pl-en">initialize</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-en">rafPolyfill</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span><span class="pl-kos">;</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerWidth</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mousemove"</span><span class="pl-kos">,</span> <span class="pl-s1">handleMouseMove</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mousedown"</span><span class="pl-kos">,</span> <span class="pl-s1">handleMouseDown</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mouseup"</span><span class="pl-kos">,</span> <span class="pl-s1">handleMouseUp</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"resize"</span><span class="pl-kos">,</span> <span class="pl-s1">handleCanvasResize</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">1000</span><span class="pl-kos">;</span> <span class="pl-s1">i</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-s1">dots</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-s1">animate</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-en">initialize</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const animate () => {
+// start up animation code
+}
+
+const rafPolyfill = () => {
+// contains polyfill code, see note below
+}
+
+const initialize = () => {
+rafPolyfill();
+
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
+canvas.addEventListener(&quot;mousemove&quot;, handleMouseMove, false);
+canvas.addEventListener(&quot;mousedown&quot;, handleMouseDown, false);
+canvas.addEventListener(&quot;mouseup&quot;, handleMouseUp, false);
+window.addEventListener(&quot;resize&quot;, handleCanvasResize, false);
+
+for (i = 0; i < 1000; i++) {
+dotsHolder.push(new dots());
+}
+
+animate();
+};
+
+initialize();" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R3" data-line-number="3" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"canvas"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R4" data-line-number="4" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">context</span> <span class="pl-c1">=</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">getContext</span><span class="pl-kos">(</span><span class="pl-s">"2d"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R5" data-line-number="5" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R6" data-line-number="6" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerWidth</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R7" data-line-number="7" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouse</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span> <span class="pl-c1">x</span>: <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">y</span>: <span class="pl-c1">0</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R8" data-line-number="8" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">colors</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r796872323" data-gid="PRRC_kwDOFneX3s4vf06D" data-url="/_render_node/PRRC_kwDOFneX3s4vf06D/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="ccdd00c354afdc526ce772c75b6ed305104f67b4459c017f3d478bf2af4dd407" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796872323" id="r796872323-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Let's define these pieces of global state (e.g.: <code>mouse</code>, <code>colors</code>, <code>dotsHolder</code>, etc.) as global variables within the global scope of the file.</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-c">// not this:</span>
+<span class="pl-k">function</span> <span class="pl-en">init</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-s1">globalMutableVariable</span> <span class="pl-c1">=</span> <span class="pl-s">"hi mom"</span> 
+<span class="pl-kos">}</span>
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">globalMutableVariable</span><span class="pl-kos">)</span> <span class="pl-c">// -&gt; "hi mom"</span>
+
+<span class="pl-c">// instead, this:</span>
+<span class="pl-k">let</span> <span class="pl-s1">globalMutableVariable</span> <span class="pl-c1">=</span> <span class="pl-s">"hi mom"</span> 
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">globalMutableVariable</span><span class="pl-kos">)</span> <span class="pl-c">// -&gt; "hi mom"</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// not this:
+function init() {
+globalMutableVariable = &quot;hi mom&quot; 
+}
+
+console.log(window.globalMutableVariable) // -> &quot;hi mom&quot;
+
+// instead, this:
+let globalMutableVariable = &quot;hi mom&quot; 
+
+console.log(globalMutableVariable) // -> &quot;hi mom&quot;" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+<p dir="auto">Defining these variables using <code>let</code>, instead of implicitly defining them as global variables on the <code>window</code> object, like you're currently doing, doesn't really change anything functionally. But it does make your code more modern and idiomatic, and relieves you of the need to define these globals within the <code>init</code> function, which will further separate out app state and app code from bootstrapping code.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#af0"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R10" data-line-number="10" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#7CD14E"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R11" data-line-number="11" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#1CDCFF"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R12" data-line-number="12" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#FFFF00"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R13" data-line-number="13" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#FF0000"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R14" data-line-number="14" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#aee137"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R15" data-line-number="15" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#bef202"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R16" data-line-number="16" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#00b2ff"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R17" data-line-number="17" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#7fff24"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R18" data-line-number="18" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#13cd4b"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R19" data-line-number="19" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#c0fa38"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R20" data-line-number="20" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#f0a"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R21" data-line-number="21" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#a0f"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R22" data-line-number="22" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#0af"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R23" data-line-number="23" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s">"#000000"</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R24" data-line-number="24" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R25" data-line-number="25" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mousemove"</span><span class="pl-kos">,</span> <span class="pl-v">MouseMove</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R26" data-line-number="26" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mousedown"</span><span class="pl-kos">,</span> <span class="pl-v">MouseDown</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R27" data-line-number="27" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"mouseup"</span><span class="pl-kos">,</span> <span class="pl-v">MouseUp</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R28" data-line-number="28" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"resize"</span><span class="pl-kos">,</span> <span class="pl-s1">canvasResize</span><span class="pl-kos">,</span> <span class="pl-c1">false</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R29" data-line-number="29" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">dotsHolder</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R30" data-line-number="30" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouseMove</span> <span class="pl-c1">=</span> <span class="pl-c1">false</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R31" data-line-number="31" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouseDown</span> <span class="pl-c1">=</span> <span class="pl-c1">false</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R32" data-line-number="32" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">1000</span><span class="pl-kos">;</span> <span class="pl-s1">i</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R33" data-line-number="33" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-s1">dots</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R34" data-line-number="34" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++3
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++34
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796876557" data-gid="PRRC_kwDOFneX3s4vf18N" data-url="/_render_node/PRRC_kwDOFneX3s4vf18N/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="72b453dde3aee156e48c4aba18c87b6222ff06a30cde3a76d5101ec19a06b914" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796876557" id="r796876557-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Lines 3 to 34 have a lot of unrelated concepts that are all grouped together. Contained in this section are things like:</p>
+<ul dir="auto">
+<li>global state which the app mutates as it runs (mouse position, the dots themselves, the width and height of the canvas)</li>
+<li>immutable constants (the array of possible colors for the dots)</li>
+<li>elements queried from the DOM (the canvas)</li>
+<li>bootstrapping code for the <code>canvas</code> API (<code>canvas.getContext("2d")</code>)</li>
+<li>bootstrapping code for event listeners (<code>mousemove</code>, <code>mousedown</code>)</li>
+</ul>
+<p dir="auto">Grouping all of these unrelated concepts together is going to confuse a first-time reader of the code. A newcomer to the file will be able to parse it more quickly if these discrete concepts are organized into groupings within the file, e.g.:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-c">// constants</span>
+<span class="pl-s1">colors</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span>
+<span class="pl-s">"#af0"</span><span class="pl-kos">,</span>
+<span class="pl-c">// etc</span>
+<span class="pl-kos">]</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// DOM elements</span>
+<span class="pl-k">const</span> <span class="pl-s1">canvas</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"canvas"</span><span class="pl-kos">)</span>
+
+<span class="pl-c">// state</span>
+<span class="pl-k">let</span> <span class="pl-s1">mouse</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span> <span class="pl-c1">x</span>: <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">y</span>: <span class="pl-c1">0</span> <span class="pl-kos">}</span> 
+<span class="pl-k">const</span> <span class="pl-s1">dotsHolder</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span><span class="pl-kos">;</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerWidth</span><span class="pl-kos">;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// constants
+colors = [
+&quot;#af0&quot;,
+// etc
+];
+
+// DOM elements
+const canvas = document.getElementById(&quot;canvas&quot;)
+
+// state
+let mouse = { x: 0, y: 0 } 
+const dotsHolder = []
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R35" data-line-number="35" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R36" data-line-number="36" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-c">/*REQUEST ANIMATION FRAME*/</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R37" data-line-number="37" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">(</span><span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R38" data-line-number="38" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">var</span> <span class="pl-s1">lastTime</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R39" data-line-number="39" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">var</span> <span class="pl-s1">vendors</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-s">"ms"</span><span class="pl-kos">,</span> <span class="pl-s">"moz"</span><span class="pl-kos">,</span> <span class="pl-s">"webkit"</span><span class="pl-kos">,</span> <span class="pl-s">"o"</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R40" data-line-number="40" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">var</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">x</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">vendors</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-c1">!</span><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">requestAnimationFrame</span><span class="pl-kos">;</span> <span class="pl-c1">++</span><span class="pl-s1">x</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R41" data-line-number="41" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">requestAnimationFrame</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R42" data-line-number="42" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-smi">window</span><span class="pl-kos">[</span><span class="pl-s1">vendors</span><span class="pl-kos">[</span><span class="pl-s1">x</span><span class="pl-kos">]</span> <span class="pl-c1">+</span> <span class="pl-s">"RequestAnimationFrame"</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R43" data-line-number="43" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">cancelAnimationFrame</span> <span class="pl-c1">=</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R44" data-line-number="44" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-smi">window</span><span class="pl-kos">[</span><span class="pl-s1">vendors</span><span class="pl-kos">[</span><span class="pl-s1">x</span><span class="pl-kos">]</span> <span class="pl-c1">+</span> <span class="pl-s">"CancelAnimationFrame"</span><span class="pl-kos">]</span> <span class="pl-c1">||</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R45" data-line-number="45" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-smi">window</span><span class="pl-kos">[</span><span class="pl-s1">vendors</span><span class="pl-kos">[</span><span class="pl-s1">x</span><span class="pl-kos">]</span> <span class="pl-c1">+</span> <span class="pl-s">"CancelRequestAnimationFrame"</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R46" data-line-number="46" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R47" data-line-number="47" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R48" data-line-number="48" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">requestAnimationFrame</span><span class="pl-kos">)</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R49" data-line-number="49" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">requestAnimationFrame</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">callback</span><span class="pl-kos">,</span> <span class="pl-s1">element</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R50" data-line-number="50" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-k">var</span> <span class="pl-s1">currTime</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Date</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">getTime</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R51" data-line-number="51" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-k">var</span> <span class="pl-s1">timeToCall</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">max</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">16</span> <span class="pl-c1">-</span> <span class="pl-kos">(</span><span class="pl-s1">currTime</span> <span class="pl-c1">-</span> <span class="pl-s1">lastTime</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R52" data-line-number="52" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-k">var</span> <span class="pl-s1">id</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">setTimeout</span><span class="pl-kos">(</span><span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R53" data-line-number="53" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">          <span class="pl-s1">callback</span><span class="pl-kos">(</span><span class="pl-s1">currTime</span> <span class="pl-c1">+</span> <span class="pl-s1">timeToCall</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R54" data-line-number="54" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-s1">timeToCall</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R55" data-line-number="55" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">lastTime</span> <span class="pl-c1">=</span> <span class="pl-s1">currTime</span> <span class="pl-c1">+</span> <span class="pl-s1">timeToCall</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R56" data-line-number="56" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-k">return</span> <span class="pl-s1">id</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R57" data-line-number="57" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">}</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R58" data-line-number="58" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R59" data-line-number="59" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">cancelAnimationFrame</span><span class="pl-kos">)</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R60" data-line-number="60" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">cancelAnimationFrame</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">id</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R61" data-line-number="61" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-en">clearTimeout</span><span class="pl-kos">(</span><span class="pl-s1">id</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R62" data-line-number="62" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">}</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R63" data-line-number="63" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R64" data-line-number="64" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++36
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++64
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796873014" data-gid="PRRC_kwDOFneX3s4vf1E2" data-url="/_render_node/PRRC_kwDOFneX3s4vf1E2/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="41771ff241a101c788825f6de283bb343311dea4c10f8716cf8be4096f415bd6" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796873014" id="r796873014-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">It looks like this <code>requestAnimationFrame</code> polyfill is something that was copy/pasted from Stack Overflow or a gist or elsewhere.</p>
+<p dir="auto">Nothing wrong with that of course! If it works it works, and major bonus points for keeping cross-browser compatibility in mind. But I'd advise a couple of things:</p>
+<ul dir="auto">
+<li>define this as a proper named function at the top of the file instead of defining and calling it within an IIFE. Functionally, the result will be the same, but by putting it at the top of the file and calling the function along with your init code, you make it easier to ignore. It doesn't have anything to do with the logic of the app, so it shouldn't be situated within the app code itself.</li>
+<li>arrow functions instead of <code>function</code> keyword-defined functions to cut down on verbosity</li>
+<li>and, if you've got the same tendency for code gardening as I do, I'd suggest doing some light gardening and modernizing of the code, e.g.: <code>let</code> instead of <code>var</code>. Once again, no functional changes will result, but you'll have a tidier garden, and future maintainers will want to keep the garden tidy if they see that others have put in an effort to be neat and conscientious.</li>
+</ul>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R65" data-line-number="65" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-en">canvasResize</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R66" data-line-number="66" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerHeight</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R67" data-line-number="67" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">innerWidth</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R68" data-line-number="68" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-en">cancelAnimationFrame</span><span class="pl-kos">(</span><span class="pl-s1">animate</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R69" data-line-number="69" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R70" data-line-number="70" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-v">MouseUp</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R71" data-line-number="71" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">mouseMove</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R72" data-line-number="72" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">mouseMove</span> <span class="pl-c1">=</span> <span class="pl-c1">false</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R73" data-line-number="73" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R74" data-line-number="74" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">mouseDown</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R75" data-line-number="75" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">mouseDown</span> <span class="pl-c1">=</span> <span class="pl-c1">false</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R76" data-line-number="76" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R77" data-line-number="77" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R78" data-line-number="78" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-v">MouseDown</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R79" data-line-number="79" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouseDown</span> <span class="pl-c1">=</span> <span class="pl-c1">true</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R80" data-line-number="80" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R81" data-line-number="81" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-v">MouseMove</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R82" data-line-number="82" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span> <span class="pl-c1">=</span> <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">pageX</span> <span class="pl-c1">-</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">offsetLeft</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R83" data-line-number="83" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span> <span class="pl-c1">=</span> <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">pageY</span> <span class="pl-c1">-</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">offsetTop</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R84" data-line-number="84" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">mouseMove</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R85" data-line-number="85" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">lineTo</span><span class="pl-kos">(</span><span class="pl-s1">mouseX</span><span class="pl-kos">,</span> <span class="pl-s1">mouseY</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R86" data-line-number="86" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">stroke</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R87" data-line-number="87" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++83
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++87
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796873326" data-gid="PRRC_kwDOFneX3s4vf1Ju" data-url="/_render_node/PRRC_kwDOFneX3s4vf1Ju/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="f8fdca365932495ce94145aabb81282126ac3c39e58dec6d1ef62dd6df498c50" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796873326" id="r796873326-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Putting a little whitespace between <code>mouse.y = ...</code> and <code>if (mouseMove)</code> will  make this just a little bit more readable. This gets back to the idea of grouping like-things together: updating the mouse x and y positions and drawing a line on the canvas are both things that happen on <code>mousemove</code>, but are nevertheless separate actions. Giving a little breathing room between these two actions will aide comprehension for newcomers to the code.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R88" data-line-number="88" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++65
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++88
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796873827" data-gid="PRRC_kwDOFneX3s4vf1Rj" data-url="/_render_node/PRRC_kwDOFneX3s4vf1Rj/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="c8e35690ad246c3c11762439b3f3e658838b4a7b21371f9030d6652ad4ed65e6" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796873827" id="r796873827-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Lines 65 to 88 should be grouped together with the other setup code above. This will help distinguish between the setup code and the real meat of the app (the code that draws and animates the dots themselves), and grouping like-things together will aid in reading comprehension for others.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R89" data-line-number="89" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-en">dots</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R90" data-line-number="90" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R91" data-line-number="91" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R92" data-line-number="92" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">color</span> <span class="pl-c1">=</span> <span class="pl-s1">colors</span><span class="pl-kos">[</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">floor</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">colors</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R93" data-line-number="93" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">radius</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">10</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R94" data-line-number="94" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">vx</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">cos</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">radius</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R95" data-line-number="95" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">vy</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">sin</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">radius</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R96" data-line-number="96" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">stepSize</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">/</span> <span class="pl-c1">10</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788203058" data-gid="PRRC_kwDOFneX3s4u-wYy" data-url="/_render_node/PRRC_kwDOFneX3s4u-wYy/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="388097fea9c2a23268a7f20da669bdb6f531085a2454ebe2f53713675d269807" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788203058" id="r788203058-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto"><code>stepSize</code> is not being used and can be deleted.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R97" data-line-number="97" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">step</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R98" data-line-number="98" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">friction</span> <span class="pl-c1">=</span> <span class="pl-c1">7</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R99" data-line-number="99" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">speedX</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">vx</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R100" data-line-number="100" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">speedY</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">vy</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R101" data-line-number="101" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++89
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++101
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796874357" data-gid="PRRC_kwDOFneX3s4vf1Z1" data-url="/_render_node/PRRC_kwDOFneX3s4vf1Z1/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="2884d03dfa0ed0b830ecd78e20d834ddda6fa99fd457edbc69635151c19ba107" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796874357" id="r796874357-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">I'd suggest writing this as a <code>makeDot</code> function which returns a simple object when called rather than defining your dots as classes:</p>
+<ul dir="auto">
+<li>As it is, you're using this class to fill the <code>dotsHolder</code> array by creating new instances of the dot class within a for loop, which is a functional programming-flavored technique as it is.</li>
+<li>The class doesn't contain any state (all of the mutable state in the app, most notably <code>dotsHolder</code>, is defined with global variables already), so you don't get the benefit of treating a class as a stateful object either.</li>
+<li>And because it's written as a class, you're encouraged to write things like <code>dots.draw</code> as prototype functions on the class itself. This couples <code>dots.draw</code> to the <code>dots</code> class, and can make it difficult in the future to decouple them if needed. Pure functions which aren't tied to a particular class are more portable and easier to adapt to new scenarios  as they arise.</li>
+</ul>
+<p dir="auto">So! I'd suggest ditching the class and going with something like this instead:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-en">makeDot</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-k">const</span> <span class="pl-s1">radius</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-c1">10</span><span class="pl-kos">;</span>
+
+<span class="pl-k">return</span> <span class="pl-kos">{</span>
+<span class="pl-c1">xPos</span>: <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span><span class="pl-kos">,</span>
+<span class="pl-c1">yPos</span>: <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span><span class="pl-kos">,</span>
+<span class="pl-c1">radius</span>: <span class="pl-s1">radius</span><span class="pl-kos">,</span>
+<span class="pl-c1">vx</span>: <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">cos</span><span class="pl-kos">(</span><span class="pl-s1">radius</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+<span class="pl-c1">vy</span>: <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">sin</span><span class="pl-kos">(</span><span class="pl-s1">radius</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+<span class="pl-c">// etc</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">const</span> <span class="pl-en">drawDots</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-c">// dot drawing code</span>
+<span class="pl-kos">}</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const makeDot = () => {
+const radius = Math.random() * 10;
+
+return {
+xPos: Math.random() * canvas.width,
+yPos: Math.random() * canvas.height,
+radius: radius,
+vx: Math.cos(radius),
+vy: Math.sin(radius),
+// etc
+};
+}
+
+const drawDots = dot => {
+// dot drawing code
+}" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R102" data-line-number="102" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R103" data-line-number="103" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-s1">dots</span><span class="pl-kos">.</span><span class="pl-en">draw</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788233392" data-gid="PRRC_kwDOFneX3s4u-3yw" data-url="/_render_node/PRRC_kwDOFneX3s4u-3yw/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="bef8f0d832baf748cabfe52f8af758058a3aa8bf83cc64ad578557eb244ac734" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788233392" id="r788233392-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">This is a big, long function which is doing a lot of things. When a function is written in this "kitchen sink" style, it's intimidating to read, because you feel like you have to understand the whole thing to understand its individual pieces.</p>
+<p dir="auto">However, there are a few broad categories we can break the functionality of <code>dots.draw</code> into:</p>
+<ul dir="auto">
+<li>updating the coordinates of the dot based on its speed and velocity (lines 108-109, and 120-131)</li>
+<li>drawing the dot, using its distance from the mouse position to determine its radius (lines 107, 110-117, 132-139, and 140)</li>
+<li>and handling the force field functionality,  i.e.: changing the trajectory of a dot based on whether it has encountered the force field when a user mouses down on the canvas (lines 141-163).</li>
+</ul>
+<p dir="auto">Let's wrap these up into functions: <code>updateDotCoords</code>, <code>drawDots</code>, and <code>handleForceField</code>), passing the <code>dot</code> being iterated over to each in turn so they can perform their state mutations or draw on the canvas as needed:</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-s1">distanceX</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span><span class="pl-kos">;</span>
+<span class="pl-s1">distanceY</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span><span class="pl-kos">;</span>
+
+<span class="pl-en">updateDotCoords</span><span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-en">handleForceField</span><span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-en">drawDot</span><span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="dotsHolder.forEach((dot) => {
+distanceX = dot.xPos - mouse.x;
+distanceY = dot.yPos - mouse.y;
+
+updateDotCoords(dot);
+handleForceField(dot);
+drawDot(dot);
+});" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R104" data-line-number="104" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">clearRect</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span><span class="pl-kos">,</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R105" data-line-number="105" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">var</span> <span class="pl-s1">c</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">c</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">c</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788227185" data-gid="PRRC_kwDOFneX3s4u-2Rx" data-url="/_render_node/PRRC_kwDOFneX3s4u-2Rx/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="7552dee438c60d09d3b94b150b19129ce2cd999d6e36bf765f0dabd68bd4a3a0" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788227185" id="r788227185-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Using a <code>forEach</code> loop instead of a <code>for</code> loop in this instance can save you from some of the headaches associated with <code>for</code> loops:</p>
+<ul dir="auto">
+<li>You don't have to keep track of the iteration in your code to run code on a specific dot:</li>
+</ul>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-c">// this:</span>
+<span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">var</span> <span class="pl-s1">c</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">c</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">c</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+<span class="pl-s1">dot</span> <span class="pl-c1">=</span> <span class="pl-s1">dotsHolder</span><span class="pl-kos">[</span><span class="pl-s1">c</span><span class="pl-kos">]</span>
+<span class="pl-c">// etc</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-c">// vs this: </span>
+<span class="pl-s1">dotsHolder</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-s1">dot</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-c">// and look at that! dot already has a name, no need to define a variable or reference the dot's index within the array at all.</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// this:
+for (var c = 0; c < dotsHolder.length; c++) {
+dot = dotsHolder[c]
+// etc
+}
+
+// vs this: 
+dotsHolder.forEach(dot => {
+// and look at that! dot already has a name, no need to define a variable or reference the dot's index within the array at all.
+})" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+<ul dir="auto">
+<li>you don't have to tell a <code>forEach</code> how many iterations to perform ("hold on, was it <code>array.length - 1</code>? or <code>array.length</code>?"), or how to increment the iterator on each loop (no more <code>c++</code>). It will simply iterate over the whole collection with no further configuration.</li>
+</ul>
+<p dir="auto"><code>for</code> loops are more flexible in that they make it easier to mutate the array being iterated on, look forwards and backwards in the collection from the current iteration point, etc. But since you aren't doing any of that here, you can opt for the simpler and terser <code>forEach</code> instead.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R106" data-line-number="106" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">dot</span> <span class="pl-c1">=</span> <span class="pl-s1">dotsHolder</span><span class="pl-kos">[</span><span class="pl-s1">c</span><span class="pl-kos">]</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R107" data-line-number="107" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">beginPath</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R108" data-line-number="108" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">distanceX</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R109" data-line-number="109" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">distanceY</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R110" data-line-number="110" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">var</span> <span class="pl-s1">particleDistance</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">sqrt</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R111" data-line-number="111" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">distanceX</span> <span class="pl-c1">*</span> <span class="pl-s1">distanceX</span> <span class="pl-c1">+</span> <span class="pl-s1">distanceY</span> <span class="pl-c1">*</span> <span class="pl-s1">distanceY</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R112" data-line-number="112" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R113" data-line-number="113" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">var</span> <span class="pl-s1">particleMouse</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">max</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R114" data-line-number="114" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">min</span><span class="pl-kos">(</span><span class="pl-c1">75</span> <span class="pl-c1">/</span> <span class="pl-kos">(</span><span class="pl-s1">particleDistance</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">radius</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-c1">7</span><span class="pl-kos">)</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R115" data-line-number="115" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-c1">1</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R116" data-line-number="116" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R117" data-line-number="117" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-c1">fillStyle</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">color</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R118" data-line-number="118" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">+=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vx</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R119" data-line-number="119" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">+=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vy</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R120" data-line-number="120" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">-</span><span class="pl-c1">50</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R121" data-line-number="121" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">=</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">+</span> <span class="pl-c1">50</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R122" data-line-number="122" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R123" data-line-number="123" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">-</span><span class="pl-c1">50</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R124" data-line-number="124" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">=</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">+</span> <span class="pl-c1">50</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R125" data-line-number="125" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R126" data-line-number="126" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">width</span> <span class="pl-c1">+</span> <span class="pl-c1">50</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R127" data-line-number="127" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">=</span> <span class="pl-c1">-</span><span class="pl-c1">50</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R128" data-line-number="128" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R129" data-line-number="129" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">+</span> <span class="pl-c1">50</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R130" data-line-number="130" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">=</span> <span class="pl-c1">-</span><span class="pl-c1">50</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R131" data-line-number="131" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R132" data-line-number="132" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">arc</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R133" data-line-number="133" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R134" data-line-number="134" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R135" data-line-number="135" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">radius</span> <span class="pl-c1">/</span> <span class="pl-c1">2.5</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">particleMouse</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R136" data-line-number="136" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-c1">0</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R137" data-line-number="137" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-c1">2</span> <span class="pl-c1">*</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-c1">PI</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R138" data-line-number="138" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-c1">false</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R139" data-line-number="139" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+<div class="f6 py-2 px-3 border-bottom d-flex flex-justify-between">
+  <div class="f6 color-fg-muted">
+Comment on lines
+
+<span class="js-multi-line-preview-start color-fg-success">
++132
+</span> to <span class="js-multi-line-preview-end color-fg-success">
++139
+</span>
+
+</div>
+
+</div>
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line is-multiline" id="r796874940" data-gid="PRRC_kwDOFneX3s4vf1i8" data-url="/_render_node/PRRC_kwDOFneX3s4vf1i8/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="68c4602917c2027619cf7ac89cb61ff06b6c9b6d4b0292ba22b58f5af83cb4ad" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r796874940" id="r796874940-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-02-01T18:22:23Z" class="no-wrap" title="Feb 1, 2022, 11:22 AM MST">1 minute ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto"><code>context.arc</code> is a function with a fairly lengthy list of positional arguments. If you work with the <code>context</code> API a lot then you might be able to remember them off the top of your head, but otherwise you have to lean on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc" rel="nofollow">MDN docs</a> to figure out what they are. Or maybe if you're a diligent dev with the right IDE tools installed, you might have the API reference handy right in your code editor.</p>
+<p dir="auto">To make it easier for the rest of us, though, we can leverage some nice ES6 features to make this easier to understand at a glance:</p>
+<ul dir="auto">
+<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" rel="nofollow">spread operator</a>, combined with</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values" rel="nofollow">Object.values</a></li>
+</ul>
+<p dir="auto">This allows us to define these positional arguments as named key/value pairs in an object, but still pass the values of that object to the <code>context.arc</code> function as positional arguments. That way, we can get an at-a-glance understanding of what the values actually configure for this function without having to reference any docs.</p>
+<div class="highlight highlight-source-js position-relative overflow-auto"><pre><span class="pl-k">const</span> <span class="pl-s1">arcConfig</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+<span class="pl-c1">x</span>: <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span><span class="pl-kos">,</span>
+<span class="pl-c1">y</span>: <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span><span class="pl-kos">,</span>
+<span class="pl-c1">radius</span>: <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">radius</span> <span class="pl-c1">/</span> <span class="pl-c1">2.5</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-s1">particleMouse</span><span class="pl-kos">,</span>
+<span class="pl-c1">startAngle</span>: <span class="pl-c1">0</span><span class="pl-kos">,</span>
+<span class="pl-c1">endAngle</span>: <span class="pl-c1">2</span> <span class="pl-c1">*</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-c1">PI</span><span class="pl-kos">,</span>
+<span class="pl-c1">drawCounterClockwise</span>: <span class="pl-c1">false</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">arc</span><span class="pl-kos">(</span>...<span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-en">values</span><span class="pl-kos">(</span><span class="pl-s1">arcConfig</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const arcConfig = {
+x: dot.xPos,
+y: dot.yPos,
+radius: (dot.radius / 2.5) * particleMouse,
+startAngle: 0,
+endAngle: 2 * Math.PI,
+drawCounterClockwise: false,
+};
+
+context.arc(...Object.values(arcConfig));" tabindex="0" role="button">
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+</div></div>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R140" data-line-number="140" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-s1">context</span><span class="pl-kos">.</span><span class="pl-en">fill</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R141" data-line-number="141" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">mouseDown</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R142" data-line-number="142" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-k">var</span> <span class="pl-s1">minimumDistance</span> <span class="pl-c1">=</span> <span class="pl-c1">164</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+
+<tr class="inline-comments js-inline-comments-container js-skip-tagsearch">
+<td class="line-comments  p-0 p-md-2 js-line-comments js-quote-selection-container" data-quote-markdown=".js-comment-body" colspan="3">
+  
+
+<div class="js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="border-md hx_remove-border-bottom-on-last-post rounded-2 comment-holder js-line-comments  ">
+
+
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+    
+
+<div class="review-comment js-minimizable-comment-group js-targetable-element border-bottom border-sm-0 hx_remove-comment-thread-vertical-line " id="r788240173" data-gid="PRRC_kwDOFneX3s4u-5ct" data-url="/_render_node/PRRC_kwDOFneX3s4u-5ct/comments/review_comment?variables%5BdeferredCommentActions%5D=false">
+
+
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment current-user reorderable-task-lists" data-body-version="53059cba4ad582efefe6f64f6af9046c9a5d66362abee7564af19d48212ba9d7" data-thread-side="right">
+<div class="edit-comment-hide">
+
+
+<div class="js-suggested-changes-contents" data-thread-side="right">
+    <span class="mr-2">
+      <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01"><img class="avatar avatar-user" alt="@andyfry01" src="https://avatars.githubusercontent.com/u/12447503?s=60&amp;u=12e7feaf220d282e87debf4c27e1c6aa00795cb8&amp;v=4" width="28" height="28"></a>
+    </span>
+
+  <h4 class="f5 text-normal d-inline">
+    <strong>
+        
+<a class="author Link--primary css-truncate-target " data-hovercard-type="user" data-hovercard-url="/users/andyfry01/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andyfry01">andyfry01</a>
+
+
+    </strong>
+    <span class="color-fg-muted">
+
+        <a href="#r788240173" id="r788240173-permalink" class="js-timestamp Link--secondary d-inline-block">
+          <relative-time datetime="2022-01-20T00:06:27Z" class="no-wrap" title="Jan 19, 2022, 5:06 PM MST">13 days ago</relative-time>
+        </a>
+
+    </span>
+
+    </h4>
+
+    
+
+
+  <task-lists sortable="">
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0 comment-body markdown-body soft-wrap  js-comment-body">
+      <p dir="auto">Variables like <code>minimumDistance</code> benefit hugely from <code>const</code> variable definition. <code>const</code> tells a newcomer to this code that the variable being defined never changes. Being able to lean on a <code>const</code> makes it easier to ignore these unchanging variables a little bit and devote more brain power to variables that <em>do</em> change, which aides in overall comprehension and decreases stress ("they call it "minimumDistance", which seems to imply that the variable won't change as the program runs, but .... what if it does?").</p>
+<p dir="auto">In addition, <code>const</code> is block-scoped instead of function-scoped, so you don't need to worry about it being leaked into the context of <code>dots.draw</code> and can rest assured that it will only persist within the scope of your <code>if</code> block. In a short-ish piece of code like this, that might not be such a big deal, but in a big function or big app, these things can create unintended side-effects and bugs.</p>
+    </div>
+  </task-lists>
+
+      
+
+      
+
+    <div class="ml-sm-6 width-auto mt-2 mt-sm-0">
+      
+
+
+    </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  
+</div>
+</div>
+</div>
+
+
+</td>
+</tr>
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R143" data-line-number="143" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">distance</span> <span class="pl-c1">=</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">sqrt</span><span class="pl-kos">(</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R144" data-line-number="144" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">          <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span><span class="pl-kos">)</span> <span class="pl-c1">+</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R145" data-line-number="145" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">            <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span><span class="pl-kos">)</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R146" data-line-number="146" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-kos">)</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R147" data-line-number="147" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">distanceX</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R148" data-line-number="148" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">distanceY</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span> <span class="pl-c1">-</span> <span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R149" data-line-number="149" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">distance</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">minimumDistance</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R150" data-line-number="150" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-k">var</span> <span class="pl-s1">forceFactor</span> <span class="pl-c1">=</span> <span class="pl-s1">minimumDistance</span> <span class="pl-c1">/</span> <span class="pl-kos">(</span><span class="pl-s1">distance</span> <span class="pl-c1">*</span> <span class="pl-s1">distance</span><span class="pl-kos">)</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R151" data-line-number="151" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">          <span class="pl-s1">xforce</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">x</span> <span class="pl-c1">-</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">xPos</span><span class="pl-kos">)</span> <span class="pl-c1">%</span> <span class="pl-s1">distance</span><span class="pl-kos">)</span> <span class="pl-c1">/</span> <span class="pl-c1">7</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R152" data-line-number="152" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">          <span class="pl-s1">yforce</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">mouse</span><span class="pl-kos">.</span><span class="pl-c1">y</span> <span class="pl-c1">-</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">yPos</span><span class="pl-kos">)</span> <span class="pl-c1">%</span> <span class="pl-s1">distance</span><span class="pl-kos">)</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">friction</span><span class="pl-kos">,</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R153" data-line-number="153" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">          <span class="pl-s1">forceField</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">forceFactor</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">)</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">friction</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R154" data-line-number="154" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vx</span> <span class="pl-c1">-=</span> <span class="pl-s1">forceField</span> <span class="pl-c1">*</span> <span class="pl-s1">xforce</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R155" data-line-number="155" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vy</span> <span class="pl-c1">-=</span> <span class="pl-s1">forceField</span> <span class="pl-c1">*</span> <span class="pl-s1">yforce</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R156" data-line-number="156" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R157" data-line-number="157" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vx</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">speed</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R158" data-line-number="158" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vx</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">speed</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">friction</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R159" data-line-number="159" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vy</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">speed</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">friction</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R160" data-line-number="160" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vy</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">speed</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R161" data-line-number="161" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">        <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">vy</span> <span class="pl-c1">=</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">speed</span> <span class="pl-c1">/</span> <span class="pl-s1">dot</span><span class="pl-kos">.</span><span class="pl-c1">friction</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R162" data-line-number="162" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">      <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R163" data-line-number="163" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">    <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R164" data-line-number="164" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R165" data-line-number="165" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R166" data-line-number="166" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-k">function</span> <span class="pl-en">animate</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R167" data-line-number="167" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-en">requestAnimationFrame</span><span class="pl-kos">(</span><span class="pl-s1">animate</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R168" data-line-number="168" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+">  <span class="pl-s1">dots</span><span class="pl-kos">.</span><span class="pl-en">draw</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R169" data-line-number="169" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-kos">}</span></span></td>
+</tr>
+
+
+
+<tr data-hunk="453d811449f52fecb9241804114063641e0bee2f721fe16b9b43f1547fcdd233">
+<td class="blob-num blob-num-addition empty-cell"></td>
+
+<td id="diff-55f25d10310d32ea95e714c30bbc6b1643e7aea1537e732d9d7fbd78ab84ad44R170" data-line-number="170" class="blob-num blob-num-addition js-linkable-line-number js-code-nav-line-number"></td>
+
+<td class="blob-code blob-code-addition js-file-line">
+    <span class="blob-code-inner blob-code-marker js-code-nav-pass " data-code-marker="+"><span class="pl-en">animate</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></span></td>
+</tr>
+
+
+
+
+
+    </tbody></table>
+  </div>

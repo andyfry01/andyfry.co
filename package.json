@@ -20,13 +20,13 @@
   },
   "homepage": "https://github.com/andyfry01/andyfry.co#readme",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^3.0.18"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@tailwindcss/typography": "^0.4.1"
+    "@fullhuman/postcss-purgecss": "^4.0.3"
   }
 }
