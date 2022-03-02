@@ -7,7 +7,7 @@ read_time: true
 comments: true
 share: true
 related: true
-description: "Code reviewing the game of pong!"
+description: "Part two of a three part series exploring code review best practices. This post focuses on brevity and repetition in a codebase: when to make things shorter vs. when to repeat code, and how to draw the line between something that's too verbose and something that's too terse."
 prism-centering: false
 header:
   large_image: /public/img/code-review-how-to/brevity-repetition.png
@@ -164,6 +164,6 @@ Thank you for reading! Feel free to leave a comment below or to reach out to me 
 
 \- Andy
 
-<script type="module" src="/public/js/code_reviews/index-dots.js"></script>
+<script type="module" src="/public/js/code_reviews/index-pong.js"></script>
 <script src="/public/js/prism.js"></script>
 
