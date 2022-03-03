@@ -7,7 +7,7 @@ read_time: true
 comments: true
 share: true
 related: true
-description: "Code reviewing a cool dot thing!"
+description: "Part one in a three-part series where we explore the art and science of performing code reviews. We start out looking at the how's and why's of code organization in this article: with broad concepts for organizing code and a real code review where we demonstrate those concepts."
 prism-centering: false
 header:
   large_image: /public/img/code-review-how-to/organization.jpg

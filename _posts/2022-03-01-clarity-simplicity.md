@@ -32,7 +32,6 @@ Code that's easier to read is easier to write, and easier to change and adapt to
 What constitutes "easier to read" is, of course, largely up to interpretation. I said "art and science" in that first paragraph because the craft of programming is in many ways still in its infancy, and much of what we do is driven by taste and convention rather than by "hard universal truths" that other professions like mechanical engineering enjoy. There are some things in the programming world which can be said to be "true" in that engineering sense, but much else is still theory. 
 
 There are a few things, however, which look like proto-truths to me. Things like immutability, functional style, and some basic tenets of organization and reuse, which I think can be applied to great effect in many different contexts. If you're down to hear my perspective on the matter, I'd love to bring you along with me as we explore these concepts.
-An explainer for wtf this thing is. Short, with links.
 
 ## Today's topic
 Today's topic is making things simple and clear. 
