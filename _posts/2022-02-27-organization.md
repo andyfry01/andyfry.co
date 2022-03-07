@@ -110,6 +110,21 @@ The code we're working with is an "Interactive Dot" Codepen by [Prayush S](https
 Check out the code, play around with the example a bit. I like to pick one dot and use the force field to make it fly around way faster than the other dots.
 
 <style>
+ @media (max-width: 576px) {
+	.go89676631.go697426381 {
+	  width: 100% !important;
+	  max-height: 80vh;
+	}
+	.go89676631 {
+      width: 100% !important;
+	  height: 50vh;
+	}
+	.go1514008979 div {
+      overflow: scroll !important;
+	}
+ }
+ @media (min-width: 577px) {
+ 
     .go3030795041 {
         max-height: 90vh;
         min-height: auto;
@@ -124,9 +139,43 @@ Check out the code, play around with the example a bit. I like to pick one dot a
     .go1514008979 > div {
         overflow: scroll !important;
    } 
+ }
+   .playground {
+     font-size: 16px;
+   } @media (max-width: 576px) {
+	.go89676631.go697426381 {
+	  width: 100% !important;
+	  max-height: 80vh;
+	}
+	.go89676631 {
+      width: 100% !important;
+	  height: 50vh;
+	}
+	.go1514008979 div {
+      overflow: scroll !important;
+	}
+ }
+ @media (min-width: 577px) {
+ 
+    .go3030795041 {
+        max-height: 90vh;
+        min-height: auto;
+    }
+    .go1671171827 {
+        max-height: 90vh;
+    }
+    .go3984977353 {
+        overflow: scroll;
+        max-height: 90vh;
+    }
+    .go1514008979 > div {
+        overflow: scroll !important;
+   } 
+ }
    .playground {
      font-size: 16px;
    }
+
 </style>
 
 

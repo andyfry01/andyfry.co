@@ -97,6 +97,21 @@ The code we're looking at today is the classic game of Pong. Here's the original
 Have a look at the code, play a couple rounds of the game. We'll review the code for repetition and brevity in the next section. 
 
 <style>
+ @media (max-width: 576px) {
+	.go89676631.go697426381 {
+	  width: 100% !important;
+	  max-height: 80vh;
+	}
+	.go89676631 {
+      width: 100% !important;
+	  height: 70vh;
+	}
+	.go1514008979 div {
+      overflow: scroll !important;
+	}
+ }
+ @media (min-width: 577px) {
+ 
     .go3030795041 {
         max-height: 90vh;
         min-height: auto;
@@ -111,6 +126,7 @@ Have a look at the code, play a couple rounds of the game. We'll review the code
     .go1514008979 > div {
         overflow: scroll !important;
    } 
+ }
    .playground {
      font-size: 16px;
    }

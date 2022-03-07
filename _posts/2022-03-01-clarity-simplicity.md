@@ -112,6 +112,21 @@ The code we're looking at today is a tic-tac-toe game.
 The original can be found [here](https://github.com/BornaSepic/Tic-Tac-Toe). Play around with the code a little bit!
 
 <style>
+ @media (max-width: 576px) {
+	.go89676631.go697426381 {
+	  width: 100% !important;
+	  max-height: 80vh;
+	}
+	.go89676631 {
+      width: 100% !important;
+	  height: 70vh;
+	}
+	.go1514008979 div {
+      overflow: scroll !important;
+	}
+ }
+ @media (min-width: 577px) {
+ 
     .go3030795041 {
         max-height: 90vh;
         min-height: auto;
@@ -126,6 +141,7 @@ The original can be found [here](https://github.com/BornaSepic/Tic-Tac-Toe). Pla
     .go1514008979 > div {
         overflow: scroll !important;
    } 
+ }
    .playground {
      font-size: 16px;
    }
