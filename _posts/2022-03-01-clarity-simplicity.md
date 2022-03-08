@@ -15,9 +15,6 @@ header:
 ---
 <link rel="stylesheet" href="/public/css/prism(3).css">
 
-<img src="/public/img/code-review-how-to/clarity-simplicity.png" alt="Title graphic, background of ones and zeroes with 'Code Review How To: Clarity and Simplicity' overlayed on top">
-<a class="text-sm text-center block"  href="https://www.freepik.com/vectors/technology">Technology vector created by starline - www.freepik.com</a>
-
 Welcome to Code Review How To! This is a three-part series where we take a look at the art and science of performing code reviews. 
 In this series, we'll look at some JavaScript code examples pulled from a few very cool blog posts and Codepens. We'll examine the code through three different lenses:
 
@@ -32,6 +29,15 @@ Code that's easier to read is easier to write, and easier to change and adapt to
 What constitutes "easier to read" is, of course, largely up to interpretation. I said "art and science" in that first paragraph because the craft of programming is in many ways still in its infancy, and much of what we do is driven by taste and convention rather than by "hard universal truths" that other professions like mechanical engineering enjoy. There are some things in the programming world which can be said to be "true" in that engineering sense, but much else is still theory. 
 
 There are a few things, however, which look like proto-truths to me. Things like immutability, functional style, and some basic tenets of organization and reuse, which I think can be applied to great effect in many different contexts. If you're down to hear my perspective on the matter, I'd love to bring you along with me as we explore these concepts.
+
+<picture>
+  <source media="(max-width: 799px)" srcset="/public/img/code-review-how-to/clarity-simplicity-social.png" />
+  <img
+    src="/public/img/code-review-how-to/clarity-simplicity.png"
+    alt="Title graphic, background of ones and zeroes with 'Code Review How To: Clarity and Simplicity' overlayed on top"
+    />
+</picture>
+<a class="text-sm text-center block"  href="https://www.freepik.com/vectors/technology">Technology vector created by starline - www.freepik.com</a>
 
 ## Today's topic
 Today's topic is making things simple and clear. 
